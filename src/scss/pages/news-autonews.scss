@@ -1,0 +1,234 @@
+// autonews.css
+
+.autonews {
+  padding: 27px 0 63px;
+  background: url("../img/img-autonews-bg-top.jpg") no-repeat center;
+  background-size: cover;
+  @media (max-width: $screen-md-max) {
+    background: url("../img/img-autonews-bg-top.jpg") no-repeat -200px center;
+    background-size: cover;
+    padding: 27px 0 20px;
+  }
+  @media (max-width: $screen-xs-max) {
+    background: url(../img/img-autonews-bg-top.jpg) no-repeat -426px center;
+    background-size: cover;
+    padding: 20px 0;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 33px;
+    font-family: "roboto", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1em;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-md-max) {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 38px;
+    }
+    @media (max-width: $screen-xs-max) {
+      font-size: 28px;
+    }
+
+  }
+
+  &__container {
+    position: relative;
+    padding-left: 265px;
+
+    @media (max-width: $screen-md-max) {
+      padding-left: 0;
+    }
+  }
+
+  &__wrapper {
+    padding: 21px 24px 20px;
+    border-left: 1px solid #fff;
+    margin-left: 262px;
+
+
+    @media (max-width: $screen-md-max) {
+      margin-left: 124px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin-left: 33px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 10px 24px 10px;
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 470px;
+    text-align: left;
+
+    @media (max-width: $screen-xs-max) {
+      max-width: 100%;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__block {
+    padding: 49px 0 50px;
+    background-color: #4c4c4c;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 61px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 14px;
+  }
+
+  &__day {
+    background-color: #ededed;
+    width: 64px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-family: "roboto", sans-serif;
+      color: #4c4c4c;
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+
+  &__mounth {
+    width: calc(100% - 64px);
+    display: inline-block;
+    color: #ededed;
+    font-family: "roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 4px 0 0 14px;
+    border-bottom: 1px solid #666666;
+  }
+
+  &__news-title {
+    display: block;
+    margin-bottom: 12px;
+    font-family: "roboto", sans-serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1em;
+  }
+
+  &__news-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img-wrap {
+    width: 200px;
+    padding-top: 2px;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text-block {
+    width: calc(100% - 227px);
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+
+  &__news-text {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #999999;
+  }
+
+  &__news-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+
+    a {
+      position: relative;
+      font-family: "roboto", sans-serif;
+      font-size: 14px;
+      color: #fff;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 6px;
+        border-color: transparent transparent transparent #e2001a;
+        left: -12px;
+        top: 3px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      }
+
+      &:hover {
+        color: #ccc;
+
+        &:before {
+          border-color: transparent transparent transparent #ff2c2c;
+        }
+      }
+    }
+  }
+}

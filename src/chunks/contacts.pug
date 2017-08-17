@@ -1,0 +1,155 @@
+.breadcrumbs
+    .container
+        a(href="/").breadcrumbs__link Главная
+        a(href="/").breadcrumbs__link Контакты
+
+.contacts
+    .container.wrap
+        .contacts__container
+            .contacts__tel
+                img(src="img/img-contacts-tel.png").contacts__tel--big
+                img(src="img/img-contacts-tel-small.png").contacts__tel--small
+            .contacts__title
+                span Контакты
+            .contacts__wrapper
+                p.contacts__text.contacts__text--bold.
+                    Мы всегда на связи.
+                p.contacts__text.
+                    Предлагаем нашим клиентам выскокачественный сервис и своевременную поддержку.
+                p.contacts__text.
+                    Обращайтесь к нам с удовольствием!
+
+.contacts__info
+    .container.wrap
+        span.contacts__info__title Телефоны:
+        .contacts__tell-wrapper
+            .contacts__tell-wrapper__item
+                .contacts__tell-wrapper__name
+                    .contacts__tell-wrapper__ico.contacts__tell-wrapper__ico--car
+                        +icon("ico-contacts-car")
+                    span Консультации по легковому сегменту:
+                a(href="tel:+375296113232").contacts__tell-wrapper__tel
+                    .contacts__tell-wrapper__ico
+                        +icon("ico-velcom")
+                    span +375 (29) 611 32 32
+                a(href="tel:+375296113232").contacts__tell-wrapper__tel
+                    .contacts__tell-wrapper__ico
+                        +icon("ico-mts")
+                    span +375 (33) 611 32 32
+            .contacts__tell-wrapper__item
+                .contacts__tell-wrapper__name
+                    .contacts__tell-wrapper__ico.contacts__tell-wrapper__ico--truck
+                        +icon("ico-contacts-truck")
+                    span Консультации по грузовому сегменту:
+                a(href="tel:+375445300600").contacts__tell-wrapper__tel
+                    .contacts__tell-wrapper__ico
+                        +icon("ico-velcom")
+                    span +375 (44) 530 06 00
+                a(href="tel:+375295300600").contacts__tell-wrapper__tel
+                    .contacts__tell-wrapper__ico
+                        +icon("ico-mts")
+                    span +375 (29) 530 06 00
+            .contacts__tell-wrapper__item
+                .contacts__tell-wrapper__name
+                    .contacts__tell-wrapper__ico.contacts__tell-wrapper__ico--phone
+                        +icon("ico-contacts-phone")
+                    span Горячая линия отзывов и предложений:
+                a(href="tel:+375445000205").contacts__tell-wrapper__tel
+                    .contacts__tell-wrapper__ico
+                        +icon("ico-velcom")
+                    span +375 (44) 500 02 05
+
+.contacts__adress
+    .container.wrap
+        span.contacts__adress__title Адреса торгово-сервисных пунктов:
+        .contacts__adress-wrapper
+            a(href="#").contacts__adress__item
+                .contacts__adress__img
+                    +icon("herb-minsk")
+                span.contacts__adress__subtitle Минск
+                span.contacts__adress__text ул. Радиальная, 40/2
+                span.contacts__adress__text ул. Уманская, 54/1
+                span.contacts__adress__text ул. Промышленная, 2/1
+            a(href="#").contacts__adress__item
+                .contacts__adress__img
+                    +icon("herb-brest")
+                span.contacts__adress__subtitle Брест
+                span.contacts__adress__text ул. Янки Купалы, 19
+            a(href="#").contacts__adress__item
+                .contacts__adress__img
+                    +icon("herb-bobruisk")
+                span.contacts__adress__subtitle Бобруйск
+                span.contacts__adress__text ул.Ульяновская, 40
+            a(href="#").contacts__adress__item
+                .contacts__adress__img
+                    +icon("herb-vitebsk")
+                span.contacts__adress__subtitle Витебск
+                span.contacts__adress__text пр-т. Московский, 35
+            a(href="#").contacts__adress__item
+                .contacts__adress__img
+                    +icon("herb-gomel")
+                span.contacts__adress__subtitle Гомель
+                span.contacts__adress__text ул. Барыкина, 321а
+            a(href="#").contacts__adress__item
+                .contacts__adress__img
+                    +icon("herb-grodno")
+                span.contacts__adress__subtitle Гродно
+                span.contacts__adress__text ул. Победы, 17
+            a(href="#").contacts__adress__item
+                .contacts__adress__img
+                    +icon("herb-mogilev")
+                span.contacts__adress__subtitle Могилев
+                span.contacts__adress__text ул. Строителей, 21
+
+.contacts__map
+    .container.wrap
+        span.contacts__map__title Расположение торгово-сервисных центров Автосеть:
+    .contacts__map-wrapper
+        .contacts__map-block#contact-map
+
+
+.contacts__quiality
+    .container.wrap
+        .contacts__container.contacts__container--bottom
+            .contacts__title
+                span КОНТРОЛЬ КАЧЕСТВА
+            .contacts__wrapper
+                p.contacts__text.contacts__text--bold.contacts__text--quiality.
+                    Мы всегда предлагаем максимум сервиса и уважаем своих клиентов.
+                p.contacts__text.contacts__text--quiality.
+                    Если у вас есть какие-либо вопросы касательно работы нашего веб-ресурса, если вы столкнулись к какой-либо проблемой или у вас есть предложения улучшения нашей работы на каком-либо участке, мы всегда готовы вас выслушать, прочитать и вступить в диалог.
+        .contacts__form
+            span.contacts__form-title Напишите нам:
+            .contacts__form-block
+                form#contacts-form
+                    label(for="form-select").contacts__form-label.contacts__form-label--select
+                        span.contacts__form-text Кому
+                        select(name="form-select" id="form-select")
+                            option(value="1") Отдел развития розничной сети
+                            option(value="2") Отдел развития розничной сети 2
+                            option(value="3") Отдел развития розничной сети 3
+                            option(value="4") Отдел развития розничной сети 4
+                    label(for="form-from").contacts__form-label
+                        span.contacts__form-text От кого
+                            span.contacts__form-rule &nbsp;*
+                        input(type="text" id="form-from" name="name").contacts__form-input
+                    label(for="form-email").contacts__form-label
+                        span.contacts__form-text Эл. почта
+                            span.contacts__form-rule &nbsp;*
+                        input(type="email" id="form-email" name="email").contacts__form-input
+                    label(for="form-tel").contacts__form-label
+                        span.contacts__form-text Телефон
+                        input(type="tel" id="form-tel").contacts__form-input.phone-input
+                    label(for="form-subject").contacts__form-label
+                        span.contacts__form-text Тема
+                        input(type="text" id="form-subject" name="subject").contacts__form-input.contacts__form-input--subject
+                    .contacts__textarea-wrapper
+                        label(for="form-text").contacts__form-label
+                            span.contacts__form-text.contacts__form-text--textarea Сообщение
+                                span.contacts__form-rule &nbsp;*
+                            textarea(id="form-text" name="text").contacts__form-textarea
+                    input(type="submit" value="Отправить").contacts__form-submit
+
+
+
+script(async="", defer="", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb2OuKaE3NLGJyzXymywkKFfWv-7Enx9E&callback=initMap")
