@@ -109,12 +109,78 @@ $(function() {
             }
         });
 
+        $("#service-singin-form-1").validate({
+            rules: {
+                form_select_service_1: {
+                    required: true
+                },
+                form_select_service_2: {
+                    required: true
+                }
+            },
+            messages: {
+                form_select_service_1: {
+                    required: "Выберите город"
+                },
+                form_select_service_2: {
+                    required: "Выберите услугу"
+                }
+            }
+        });
+
+        $("#service-singin-form-2").validate({
+            rules: {
+                form_select_service_21: {
+                    required: true
+                },
+                form_select_service_22: {
+                    required: true
+                }
+            },
+            messages: {
+                form_select_service_21: {
+                    required: "Выберите город"
+                },
+                form_select_service_22: {
+                    required: "Выберите услугу"
+                }
+            }
+        });
+
 
     });
 
+
+
     $(".phone-input").mask("+999999999999");
 
-    $('select').styler();
+    $('select').styler({
+        onSelectOpened: function () {
+            $(this).find('.jq-selectbox__trigger-arrow').css('transform','rotate(180deg)');
+            $(this).parents('.service-singin__form-label').css('z-index','4');
+        },
+        onSelectClosed: function () {
+            $(this).find('.jq-selectbox__trigger-arrow').css('transform','rotate(0deg)');
+            $(this).parents('.service-singin__form-label').css('z-index','3');
+        }
+    });
+
+    $('.js-service-tabs-btn').click(function (e) {
+        e.preventDefault();
+
+        $('.service-singin__tabs-btn').removeClass('active');
+        $(this).addClass('active');
+
+        var tabID = '#service-' + $(this).data('tab');
+
+        $('.service-singin__form').removeClass('active');
+        $(tabID).addClass('active');
+    });
+
+    $('.service-singin__info-img').matchHeight({
+        byRow: false,
+        property: 'height'
+    });
 
 });
 

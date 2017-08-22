@@ -1,0 +1,102 @@
+.breadcrumbs
+    .container
+        a(href="/").breadcrumbs__link Главная
+        a(href="/").breadcrumbs__link Запись на сервис
+
+.service-singin
+    .container
+        .service-singin__tabs-title ЗАПИСЬ В ОЧЕРЕДЬ НА СЕРВИС
+        .service-singin__tabs
+            span(data-tab="tab1").service-singin__tabs-btn.js-service-tabs-btn.active Легковой сервис
+            span(data-tab="tab2").service-singin__tabs-btn.js-service-tabs-btn Грузовой сервис
+    .service-singin__tabs-wrapper
+        .container.wrap
+            .service-singin__tab
+                .service-singin__tab-img
+                    img(src="img/img-service-phone.png" alt="")
+                .service-singin__form.active#service-tab1
+                    form#service-singin-form-1
+                        label(for="form-select-service-1").service-singin__form-label.service-singin__form-label--select
+                            span.service-singin__form-text Город
+                            select(name="form_select_service_1" id="form-select-service-1")
+                                option(value="1" disabled="disabled" selected="selected") Выберите город
+                                option(value="2") Брест
+                                option(value="3") Гродно
+                                option(value="4") Минск
+
+                        label(for="form-select-service-2").service-singin__form-label.service-singin__form-label--select
+                            span.service-singin__form-text Услуга
+                            select(name="form_select_service_2" id="form-select-service-2")
+                                option(value="1" disabled="disabled" selected="selected") Выберите услугу
+                                option(value="2") Услуга 1
+                                option(value="3") Услуга 2
+                                option(value="4") Услуга 3
+
+                        button(type="submit" form="service-singin-form-1").service-singin__form-submit
+                            span.service-singin__form-submit__img
+                                +icon("ico-service-singin-submit")
+                            span.service-singin__form-submit__text Выберите дату и время
+                .service-singin__form#service-tab2
+                    form#service-singin-form-2
+                        label(for="form-select-service-21").service-singin__form-label.service-singin__form-label--select
+                            span.service-singin__form-text Город
+                            select(name="form_select_service_21" id="form-select-service-21")
+                                option(value="1" disabled="disabled" selected="selected") Выберите город
+                                option(value="2") Брест
+                                option(value="3") Гродно
+                                option(value="4") Минск
+
+                        label(for="form-select-service-22").service-singin__form-label.service-singin__form-label--select
+                            span.service-singin__form-text Услуга
+                            select(name="form_select_service_22" id="form-select-service-22")
+                                option(value="1" disabled="disabled" selected="selected") Выберите услугу
+                                option(value="2") Услуга 1
+                                option(value="3") Услуга 2
+                                option(value="4") Услуга 3
+
+                        button(type="submit" form="service-singin-form-2").service-singin__form-submit
+                            span.service-singin__form-submit__img
+                                +icon("ico-service-singin-submit")
+                            span.service-singin__form-submit__text Выберите дату и время
+                .service-singin__attention
+                    span.
+                        <span class="red-text"><b>Внимание:</b></span> помимо записи в очередь через сайт, на наших сервисах
+                        имеется возможность обслужиться по <b>«живой» очереди.</b>
+
+    .container.wrap
+        .service-singin__info
+            .service-singin__info-item
+                .service-singin__info-img.service-singin__info-img--ico-1
+                    +icon("ico-service-singin-365")
+                .service-singin__info-text
+                    span.service-singin__info-title Гарантия <br>365 дней
+                    span.service-singin__info-subtitle на услуги <br>автосервиса
+
+            .service-singin__info-item
+                .service-singin__info-img.service-singin__info-img--ico-2
+                    +icon("ico-service-singin-team")
+                .service-singin__info-text
+                    span.service-singin__info-title Команда <br>профессионалов
+                    span.service-singin__info-subtitle специалисты <br>высокого класса
+
+            .service-singin__info-item
+                .service-singin__info-img.service-singin__info-img--ico-3
+                    +icon("ico-service-singin-accuracy")
+                .service-singin__info-text
+                    span.service-singin__info-title Высокая <br>точность
+                    span.service-singin__info-subtitle используемого <br>оборудования
+
+            .service-singin__info-item
+                .service-singin__info-img.service-singin__info-img--ico-4
+                    +icon("ico-service-singin-fulldoc")
+                .service-singin__info-text
+                    span.service-singin__info-title Полный пакет <br>документов
+                    span.service-singin__info-subtitle для организаций, <br>чек, талон, гарантия
+
+.service-singin__spec
+    .container
+        span.service-singin__spec-title СПЕЦИАЛЬНЫЕ ЦЕНЫ НА АВТОСЕРВИС!
+        .service-singin__spec-link-wrap
+            a(href="#").service-singin__spec-link Посмотреть специальные предложения автосервиса
+
+

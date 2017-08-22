@@ -538,6 +538,8 @@ label.error {
   height: 10px;
   background: url("../img/svg/ico-arrow-select.svg") no-repeat center;
   background-size: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
   border-top-color: #000;
