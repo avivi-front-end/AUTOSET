@@ -20,6 +20,10 @@ p, span, a {
   background-color: #fafafa;
   padding: 17px 0 16px;
 
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+
   &__link {
     position: relative;
     font-family: "roboto", sans-serif;
@@ -754,4 +758,8 @@ input[type='submit'].styler[disabled] {
   background: #F5F5F5;
   box-shadow: none;
   color: #888;
+}
+
+b, strong {
+  font-weight: 700;
 }

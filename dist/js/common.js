@@ -119,7 +119,6 @@ $(function() {
 });
 
 
-
 function initMap() {
     var uluru = {lat: 53.893028, lng: 27.647750};
     var mapZoom = 7;

@@ -1,7 +1,7 @@
 // company-news.css
 
 .company-news {
-  padding: 27px 0 63px;
+  padding: 25px 0 44px;
   background: url("../img/img-company-news-bg-top.jpg") no-repeat center;
   background-size: cover;
   @media (max-width: $screen-md-max) {
@@ -10,20 +10,23 @@
     padding: 27px 0 20px;
   }
   @media (max-width: $screen-xs-max) {
-    background: url(../img/img-company-news-bg-top.jpg) no-repeat -426px center;
+    background: url("../img/img-company-news-bg-top.jpg") no-repeat -426px center;
     background-size: cover;
     padding: 20px 0;
   }
 
   &__title {
     display: block;
-    margin-bottom: 33px;
+    margin-bottom: 10px;
     font-family: "roboto", sans-serif;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1em;
-    color: #fff;
+    color: #4c4c4c;
+    width: 100%;
+    text-align: center;
     text-transform: uppercase;
+    padding: 0 20px;
 
     @media (max-width: $screen-md-max) {
       font-size: 40px;
@@ -41,7 +44,6 @@
 
   &__container {
     position: relative;
-    padding-left: 265px;
 
     @media (max-width: $screen-md-max) {
       padding-left: 0;
@@ -49,13 +51,13 @@
   }
 
   &__wrapper {
-    padding: 21px 24px 20px;
-    border-left: 1px solid #fff;
-    margin-left: 262px;
+    padding: 32px 21px 18px;
+    border-left: 1px solid #4c4c4c;
+    margin-left: 143px;
 
 
     @media (max-width: $screen-md-max) {
-      margin-left: 124px;
+      margin-left: 70px;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -71,11 +73,11 @@
   &__text {
     display: inline-block;
     font-family: "roboto", sans-serif;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 17px;
     font-weight: 400;
-    color: #fff;
-    max-width: 470px;
+    color: #4c4c4c;
+    max-width: 540px;
     text-align: left;
 
     @media (max-width: $screen-xs-max) {
@@ -89,7 +91,7 @@
 
   &__block {
     padding: 49px 0 50px;
-    background-color: #4c4c4c;
+    background-color: #fff;
   }
 
   &__info {
@@ -106,6 +108,32 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 33px;
+
+    &:hover {
+
+      .company-news__news-title {
+        color: #666;
+      }
+    }
+
+    &--celebration {
+
+      .company-news__day {
+        background-color: #e2001a;
+      }
+
+      .company-news__mounth,
+      .company-news__news-title {
+        color: #e2001a;
+      }
+
+      &:hover {
+
+        .company-news__news-title {
+          color: #ff2c2c;
+        }
+      }
+    }
   }
 
   &__date {
@@ -115,7 +143,7 @@
   }
 
   &__day {
-    background-color: #ededed;
+    background-color: #4c4c4c;
     width: 64px;
     height: 32px;
     display: flex;
@@ -124,7 +152,7 @@
 
     span {
       font-family: "roboto", sans-serif;
-      color: #4c4c4c;
+      color: #fff;
       font-size: 22px;
       font-weight: 700;
     }
@@ -133,22 +161,24 @@
   &__mounth {
     width: calc(100% - 64px);
     display: inline-block;
-    color: #ededed;
+    color: #4c4c4c;
     font-family: "roboto", sans-serif;
     font-size: 22px;
     font-weight: 500;
     padding: 4px 0 0 14px;
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid #cccccc;
   }
 
   &__news-title {
     display: block;
     margin-bottom: 12px;
     font-family: "roboto", sans-serif;
-    color: #fff;
+    color: #000;
     font-size: 22px;
     font-weight: 500;
     line-height: 1em;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   &__news-wrap {
@@ -192,7 +222,17 @@
     font-family: "roboto", sans-serif;
     font-size: 16px;
     line-height: 19px;
-    color: #999999;
+    color: #000;
+
+    a {
+      color: #000;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: #666666;
+      }
+    }
   }
 
   &__news-link {
@@ -204,7 +244,7 @@
       position: relative;
       font-family: "roboto", sans-serif;
       font-size: 14px;
-      color: #fff;
+      color: #4c4c4c;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
 
@@ -223,7 +263,7 @@
       }
 
       &:hover {
-        color: #ccc;
+        color: #666666;
 
         &:before {
           border-color: transparent transparent transparent #ff2c2c;
