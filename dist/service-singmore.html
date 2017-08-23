@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie-detector.js"></script>
+    <script src="js/modernizr.js"></script><!--[if lt IE 7]>  <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <![endif]-->
+  </head>
+  <div class="page-wrapper" id="page-wrapper">
+    <div class="page-body" id="page-body">
+      <div class="breadcrumbs">
+        <div class="container"><a class="breadcrumbs__link" href="/">Главная</a><a class="breadcrumbs__link" href="/">Запись на сервис</a><a class="breadcrumbs__link" href="/">Запись на легковой сервис</a></div>
+      </div>
+      <div class="service-singmore">
+        <div class="container">
+          <div class="service-singmore__tabs"><span class="service-singin__tabs-btn service-singmore__tabs-btn js-service-tabs-btn active" data-tab="tab1">Легковой сервис</span><span class="service-singin__tabs-btn service-singmore__tabs-btn js-service-tabs-btn" data-tab="tab2">Грузовой сервис</span></div>
+        </div>
+        <div class="service-singmore__tabs-wrapper">
+          <div class="container wrap">
+            <div class="service-singmore__tab">
+              <div class="service-singmore__tab-img"><img src="img/img-service-phone.png" alt=""></div>
+              <div class="service-singmore__form service-singin__form active" id="service-tab1">
+                <form id="service-singmore-form-1">
+                  <label class="service-singmore__form-label service-singmore__form-label--select" for="form-select-service-1"><span class="service-singmore__form-text">Город</span>
+                    <select name="form_select_service_1" id="form-select-service-1">
+                      <option value="1" disabled="disabled" selected="selected">Выберите город</option>
+                      <option value="2">Брест</option>
+                      <option value="3">Гродно</option>
+                      <option value="4">Минск</option>
+                    </select>
+                  </label>
+                  <label class="service-singmore__form-label service-singmore__form-label--select" for="form-select-service-2"><span class="service-singmore__form-text">Услуга</span>
+                    <select name="form_select_service_2" id="form-select-service-2">
+                      <option value="1" disabled="disabled" selected="selected">Выберите услугу</option>
+                      <option value="2">Услуга 1</option>
+                      <option value="3">Услуга 2</option>
+                      <option value="4">Услуга 3</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+              <div class="service-singmore__form service-singin__form" id="service-tab2">
+                <form id="service-singmore-form-2">
+                  <label class="service-singmore__form-label service-singmore__form-label--select" for="form-select-service-21"><span class="service-singmore__form-text">Город</span>
+                    <select name="form_select_service_21" id="form-select-service-21">
+                      <option value="1" disabled="disabled" selected="selected">Выберите город</option>
+                      <option value="2">Брест</option>
+                      <option value="3">Гродно</option>
+                      <option value="4">Минск</option>
+                    </select>
+                  </label>
+                  <label class="service-singmore__form-label service-singmore__form-label--select" for="form-select-service-22"><span class="service-singmore__form-text">Услуга</span>
+                    <select name="form_select_service_22" id="form-select-service-22">
+                      <option value="1" disabled="disabled" selected="selected">Выберите услугу</option>
+                      <option value="2">Услуга 1</option>
+                      <option value="3">Услуга 2</option>
+                      <option value="4">Услуга 3</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+              <div class="service-singmore__attention"><span>
+                  <span class="red-text"><b>Внимание:</b></span> помимо записи в очередь через сайт, на наших сервисах
+                  имеется возможность обслужиться по <b>«живой» очереди.</b>
+                  </span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="singmore-calendar">
+        <div class="container wrap">
+          <div class="singmore-calendar__wrapper">
+            <div class="singmore-calendar__item singmore-calendar__item--calendar"><span class="singmore-calendar__title">Шиномонтаж</span><span class="singmore-calendar__adress">г. Брест ул. Янки Купалы, 19</span><a class="singmore-calendar__onmap" href="#">показать на карте
+                <svg class="icon icon-ico-singmore-map ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-singmore-map"></use>
+                </svg></a>
+              <div class="singmore-calendar__calendar" id="service-calendar"></div>
+            </div>
+            <div class="singmore-calendar__item singmore-calendar__item--times">
+              <div class="singmore-calendar__icons"><span class="singmore-calendar__icons__text times-grey">занято</span><span class="singmore-calendar__icons__text times-green">свободно</span></div>
+              <div class="singmore-calendar__times-wrap"><a class="singmore-calendar__times-item js-time" href="#">08:00</a><a class="singmore-calendar__times-item js-time" href="#">08:20</a><a class="singmore-calendar__times-item js-time" href="#">08:40</a><a class="singmore-calendar__times-item js-time" href="#">09:00</a><a class="singmore-calendar__times-item js-time" href="#">09:20</a><a class="singmore-calendar__times-item js-time" href="#">09:40</a><a class="singmore-calendar__times-item js-time active" href="#">10:00</a><a class="singmore-calendar__times-item js-time" href="#">10:20</a><a class="singmore-calendar__times-item js-time" href="#">10:40</a><a class="singmore-calendar__times-item js-time" href="#">11:00</a><a class="singmore-calendar__times-item js-time" href="#">11:20</a><a class="singmore-calendar__times-item js-time" href="#">11:40</a><a class="singmore-calendar__times-item js-time" href="#">12:00</a><a class="singmore-calendar__times-item js-time" href="#">12:20</a><a class="singmore-calendar__times-item js-time" href="#">12:40</a><a class="singmore-calendar__times-item js-time active" href="#">13:00</a><a class="singmore-calendar__times-item js-time active" href="#">13:20</a><a class="singmore-calendar__times-item js-time active" href="#">13:40</a><a class="singmore-calendar__times-item js-time active current" href="#">14:00</a><a class="singmore-calendar__times-item js-time actvie" href="#">14:20</a><a class="singmore-calendar__times-item js-time active" href="#">14:40</a><a class="singmore-calendar__times-item js-time active" href="#">15:00</a><a class="singmore-calendar__times-item js-time active" href="#">15:20</a><a class="singmore-calendar__times-item js-time active" href="#">15:40</a><a class="singmore-calendar__times-item js-time" href="#">16:00</a><a class="singmore-calendar__times-item js-time active" href="#">16:20</a><a class="singmore-calendar__times-item js-time active" href="#">16:40</a><a class="singmore-calendar__times-item js-time active" href="#">17:00</a><a class="singmore-calendar__times-item js-time active" href="#">17:20</a><a class="singmore-calendar__times-item js-time active" href="#">17:40</a><a class="singmore-calendar__times-item js-time" href="#">18:00</a><a class="singmore-calendar__times-item js-time" href="#">18:20</a><a class="singmore-calendar__times-item js-time active" href="#">18:40</a><a class="singmore-calendar__times-item js-time active" href="#">19:00</a><a class="singmore-calendar__times-item js-time active" href="#">19:20</a><a class="singmore-calendar__times-item js-time active" href="#">19:40</a><a class="singmore-calendar__times-item js-time active" href="#">20:00</a><a class="singmore-calendar__times-item js-time active" href="#">20:20</a><a class="singmore-calendar__times-item js-time" href="#">20:40</a><a class="singmore-calendar__times-item" href="#"></a></div><span class="singmore-calendar__btn">Продолжить запись</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- inject:js -->
+<!-- endinject -->
+<!-- build:js -->
+  <script src="js/libs.js"></script>
+  <script src="//localhost:35729/livereload.js"></script><!-- endbuild -->
+  <script src="js/common.js"></script>
+</html>

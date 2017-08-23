@@ -1,0 +1,123 @@
+.breadcrumbs
+    .container
+        a(href="/").breadcrumbs__link Главная
+        a(href="/").breadcrumbs__link Запись на сервис
+        a(href="/").breadcrumbs__link Запись на легковой сервис
+
+.service-singmore
+    .container
+        .service-singmore__tabs
+            span(data-tab="tab1").service-singin__tabs-btn.service-singmore__tabs-btn.js-service-tabs-btn.active Легковой сервис
+            span(data-tab="tab2").service-singin__tabs-btn.service-singmore__tabs-btn.js-service-tabs-btn Грузовой сервис
+    .service-singmore__tabs-wrapper
+        .container.wrap
+            .service-singmore__tab
+                .service-singmore__tab-img
+                    img(src="img/img-service-phone.png" alt="")
+                .service-singmore__form.service-singin__form.active#service-tab1
+                    form#service-singmore-form-1
+                        label(for="form-select-service-1").service-singmore__form-label.service-singmore__form-label--select
+                            span.service-singmore__form-text Город
+                            select(name="form_select_service_1" id="form-select-service-1")
+                                option(value="1" disabled="disabled" selected="selected") Выберите город
+                                option(value="2") Брест
+                                option(value="3") Гродно
+                                option(value="4") Минск
+
+                        label(for="form-select-service-2").service-singmore__form-label.service-singmore__form-label--select
+                            span.service-singmore__form-text Услуга
+                            select(name="form_select_service_2" id="form-select-service-2")
+                                option(value="1" disabled="disabled" selected="selected") Выберите услугу
+                                option(value="2") Услуга 1
+                                option(value="3") Услуга 2
+                                option(value="4") Услуга 3
+
+                .service-singmore__form.service-singin__form#service-tab2
+                    form#service-singmore-form-2
+                        label(for="form-select-service-21").service-singmore__form-label.service-singmore__form-label--select
+                            span.service-singmore__form-text Город
+                            select(name="form_select_service_21" id="form-select-service-21")
+                                option(value="1" disabled="disabled" selected="selected") Выберите город
+                                option(value="2") Брест
+                                option(value="3") Гродно
+                                option(value="4") Минск
+
+                        label(for="form-select-service-22").service-singmore__form-label.service-singmore__form-label--select
+                            span.service-singmore__form-text Услуга
+                            select(name="form_select_service_22" id="form-select-service-22")
+                                option(value="1" disabled="disabled" selected="selected") Выберите услугу
+                                option(value="2") Услуга 1
+                                option(value="3") Услуга 2
+                                option(value="4") Услуга 3
+
+                .service-singmore__attention
+                    span.
+                        <span class="red-text"><b>Внимание:</b></span> помимо записи в очередь через сайт, на наших сервисах
+                        имеется возможность обслужиться по <b>«живой» очереди.</b>
+
+.singmore-calendar
+    .container.wrap
+        .singmore-calendar__wrapper
+            .singmore-calendar__item.singmore-calendar__item--calendar
+                span.singmore-calendar__title Шиномонтаж
+                span.singmore-calendar__adress г. Брест ул. Янки Купалы, 19
+                a(href="#").singmore-calendar__onmap показать на карте
+                    +icon("ico-singmore-map")
+                .singmore-calendar__calendar#service-calendar
+
+            .singmore-calendar__item.singmore-calendar__item--times
+                .singmore-calendar__icons
+                    span.singmore-calendar__icons__text.times-grey занято
+                    span.singmore-calendar__icons__text.times-green свободно
+                .singmore-calendar__times-wrap
+                    a(href="#").singmore-calendar__times-item.js-time 08:00
+                    a(href="#").singmore-calendar__times-item.js-time 08:20
+                    a(href="#").singmore-calendar__times-item.js-time 08:40
+                    a(href="#").singmore-calendar__times-item.js-time 09:00
+
+                    a(href="#").singmore-calendar__times-item.js-time 09:20
+                    a(href="#").singmore-calendar__times-item.js-time 09:40
+                    a(href="#").singmore-calendar__times-item.js-time.active 10:00
+                    a(href="#").singmore-calendar__times-item.js-time 10:20
+
+                    a(href="#").singmore-calendar__times-item.js-time 10:40
+                    a(href="#").singmore-calendar__times-item.js-time 11:00
+                    a(href="#").singmore-calendar__times-item.js-time 11:20
+                    a(href="#").singmore-calendar__times-item.js-time 11:40
+
+                    a(href="#").singmore-calendar__times-item.js-time 12:00
+                    a(href="#").singmore-calendar__times-item.js-time 12:20
+                    a(href="#").singmore-calendar__times-item.js-time 12:40
+                    a(href="#").singmore-calendar__times-item.js-time.active 13:00
+
+                    a(href="#").singmore-calendar__times-item.js-time.active 13:20
+                    a(href="#").singmore-calendar__times-item.js-time.active 13:40
+                    a(href="#").singmore-calendar__times-item.js-time.active.current 14:00
+                    a(href="#").singmore-calendar__times-item.js-time.actvie 14:20
+
+                    a(href="#").singmore-calendar__times-item.js-time.active 14:40
+                    a(href="#").singmore-calendar__times-item.js-time.active 15:00
+                    a(href="#").singmore-calendar__times-item.js-time.active 15:20
+                    a(href="#").singmore-calendar__times-item.js-time.active 15:40
+
+                    a(href="#").singmore-calendar__times-item.js-time 16:00
+                    a(href="#").singmore-calendar__times-item.js-time.active 16:20
+                    a(href="#").singmore-calendar__times-item.js-time.active 16:40
+                    a(href="#").singmore-calendar__times-item.js-time.active 17:00
+
+                    a(href="#").singmore-calendar__times-item.js-time.active 17:20
+                    a(href="#").singmore-calendar__times-item.js-time.active 17:40
+                    a(href="#").singmore-calendar__times-item.js-time 18:00
+                    a(href="#").singmore-calendar__times-item.js-time 18:20
+
+                    a(href="#").singmore-calendar__times-item.js-time.active 18:40
+                    a(href="#").singmore-calendar__times-item.js-time.active 19:00
+                    a(href="#").singmore-calendar__times-item.js-time.active 19:20
+                    a(href="#").singmore-calendar__times-item.js-time.active 19:40
+
+                    a(href="#").singmore-calendar__times-item.js-time.active 20:00
+                    a(href="#").singmore-calendar__times-item.js-time.active 20:20
+                    a(href="#").singmore-calendar__times-item.js-time 20:40
+                    a(href="#").singmore-calendar__times-item
+
+                span.singmore-calendar__btn Продолжить запись

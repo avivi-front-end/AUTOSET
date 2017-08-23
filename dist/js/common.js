@@ -147,6 +147,44 @@ $(function() {
             }
         });
 
+        $("#service-singmore-form-1").validate({
+            rules: {
+                form_select_service_1: {
+                    required: true
+                },
+                form_select_service_2: {
+                    required: true
+                }
+            },
+            messages: {
+                form_select_service_1: {
+                    required: "Выберите город"
+                },
+                form_select_service_2: {
+                    required: "Выберите услугу"
+                }
+            }
+        });
+
+        $("#service-singmore-form-2").validate({
+            rules: {
+                form_select_service_21: {
+                    required: true
+                },
+                form_select_service_22: {
+                    required: true
+                }
+            },
+            messages: {
+                form_select_service_21: {
+                    required: "Выберите город"
+                },
+                form_select_service_22: {
+                    required: "Выберите услугу"
+                }
+            }
+        });
+
 
     });
 
@@ -157,11 +195,11 @@ $(function() {
     $('select').styler({
         onSelectOpened: function () {
             $(this).find('.jq-selectbox__trigger-arrow').css('transform','rotate(180deg)');
-            $(this).parents('.service-singin__form-label').css('z-index','4');
+            $(this).parents('label').css('z-index','4');
         },
         onSelectClosed: function () {
             $(this).find('.jq-selectbox__trigger-arrow').css('transform','rotate(0deg)');
-            $(this).parents('.service-singin__form-label').css('z-index','3');
+            $(this).parents('label').css('z-index','3');
         }
     });
 
@@ -177,10 +215,33 @@ $(function() {
         $(tabID).addClass('active');
     });
 
+
     $('.service-singin__info-img').matchHeight({
         byRow: false,
         property: 'height'
     });
+
+    $("#service-calendar").datepicker($.datepicker.regional[ "ru" ]);
+
+
+    var calendarTime = (function() {
+
+        var time = $('.js-time');
+
+        time.click(function (e) {
+            e.preventDefault();
+
+            $(time).removeClass('current');
+            $(this).toggleClass('current');
+        });
+
+        time.each(function () {
+            var dataTime = $(this).text();
+            $(this).attr('data-time', dataTime);
+        });
+
+    })();
+
 
 });
 
