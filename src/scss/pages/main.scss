@@ -170,7 +170,22 @@ label.error {
   }
 }
 
+.index {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
 
+  a {
+    color: #e2001a;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #ff2c2c;
+    }
+  }
+}
 
 .jq-checkbox,
 .jq-radio {

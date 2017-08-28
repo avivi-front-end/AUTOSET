@@ -185,6 +185,31 @@ $(function() {
             }
         });
 
+        $("#service-works-form").validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true
+                },
+                text: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Введите имя"
+                },
+                email: {
+                    required: "Введите e-mail"
+                },
+                text: {
+                    required: "Введите сообщение"
+                }
+            }
+        });
+
 
     });
 
