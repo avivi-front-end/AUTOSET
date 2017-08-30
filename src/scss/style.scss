@@ -2,6 +2,7 @@
 @import 'bourbon';
 //*********************************************
 @import 'base/reset';
+@import 'base/slick';
 //*********************************************
 @import 'abstracts/variables';
 @import 'abstracts/clearfix';
@@ -25,8 +26,10 @@
 @import 'pages/news-company-news';
 @import 'pages/news';
 @import 'pages/service-singin';
-
 @import 'pages/service-singmore';
+@import 'pages/special_offers';
+@import 'pages/tire_goodyear_effgrip';
+@import 'pages/tires_selection';
 
 
 

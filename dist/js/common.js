@@ -242,9 +242,60 @@ $(function() {
 
     })();
 
+    var offersTimer = (function() {
+        var timers = $('.js-offersTimer');
+
+        for(var i = 0; i < timers.length; i++) {
+            (function(i) {
+                setInterval(function(){
+                    var curTimer = timers.eq(i);
+                    var finishDate = new Date(curTimer.attr('data-time')).getTime();
+                    var thisDate = new Date().getTime();
+                    var distance = finishDate - thisDate;
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    curTimer.find('.js-offersDays').html(days);
+                    curTimer.find('.js-offersHours').html(hours);
+                    curTimer.find('.js-offersMinutes').html(minutes);
+                }, 1000)
+                console.log('done')
+            })(i)
+        }
+    })();
+
+    $('.js-prodBigSlider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.js-prodSmallSlider',
+        pauseOnHover: false
+    })
+
+    $('.js-prodSmallSlider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.js-prodBigSlider',
+        pauseOnHover: false,
+        focusOnSelect: true
+    })
+
+    $('.js-prodTab').on('click', function() {
+        if(!$(this).hasClass('active')) {
+            var ind = $(this).index();
+            $('.js-prodTab').removeClass('active');
+            $('.js-prodTabBlock').removeClass('active');
+            $(this).addClass('active');
+            $('.js-prodTabBlock').eq(ind).addClass('active');
+        }
+    })
 
 });
 
+
+//   stroke-linejoin="bevel" fill-rule="evenodd" 
 
 function initMap() {
     var uluru = {lat: 53.893028, lng: 27.647750};

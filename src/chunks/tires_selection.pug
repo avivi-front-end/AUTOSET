@@ -1,0 +1,252 @@
+.tiresList
+    .container
+        .tiresList__filter
+            .tiresList__results
+                |Найдено 
+                span 40
+                | вариантов в размере 
+                span 225/45 R17 
+            .tiresList__btns
+                button(type="button").tiresList__btn Сначала дешёвые
+                button(type="button").tiresList__btn.active Сначала дорогие
+        .tiresList__products
+            .tiresList__item
+                .tiresList__itemWrap
+                    .tiresList__itemLeft
+                        .tiresList__name WANLI
+                        .tiresList__model SA302
+                        .tiresList__modelInfo
+                            .tiresList__infoItem 225/45 R17
+                            .tiresList__infoItem.tiresList__infoItem--border 94 W
+                            .tiresList__infoItem.tiresList__infoItem--border
+                                | Класс
+                                span C+
+                            .tiresList__infoItem.tiresList__infoItem--border Евроэтикетка
+                        .tiresList__aboutBlock
+                            .tiresList__imgBlock
+                                img(src="./img/img-tires-tire.jpg", alt="#", data-object-fit="contain")
+                                .tiresList__weather
+                                    img(src="./img/img-prod-sun.png", alt="#")
+                                .tiresList__videoBtn
+                                    img(src="./img/img-prod-videoBtn.png", alt="#")
+                                    span Видео
+                                .tiresList__compare
+                                    input(type="checkbox" id="compare")
+                                    label(for="compare").tiresList__compareCheck Сравнить
+                            .tiresList__smallInfo
+                                ul
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Сезонность:
+                                        .tiresList__smallInfoValue Летняя
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Протектор/Вес
+                                        .tiresList__smallInfoValue 8 мм / 11 кг
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Производство:
+                                        .tiresList__smallInfoValue Китай
+                    .tiresList__itemRight
+                        .tiresList__options
+                            .tiresList__option
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-1')
+                                .tiresList__optionText Бесплатная доставка
+                            .tiresList__option
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-10')
+                                .tiresList__optionText Гарантия 2 года
+                            .tiresList__option 
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-7')
+                                .tiresList__optionText Рассрочка до 6 месяцев
+                        .tiresList__price
+                            .tiresList__oldPrice
+                                span.tiresList__oldPriceLabel цена
+                                span.span.tiresList__oldPriceNumber 209.50
+                                | р.
+                            .tiresList__newPrice
+                                span.tiresList__newPriceLabel цена со скидкой
+                                span.tiresList__newPriceNumber 184.36 
+                                |р.
+                        .tiresList__stock
+                            span В наличии:
+                            | более 10 шт.
+                        .tiresList__order
+                            .tiresList__select
+                                .tiresList__selectLabel Количество:
+                                select(name="form_select_product" id="form-select-product").tiresList__capacitySelect
+                                        option(value="1" selected="selected") 4
+                                        option(value="2") 1
+                                        option(value="3") 2
+                                        option(value="5") 8
+                            button(type="button").tiresList__buyButton КУПИТЬ
+            .tiresList__item
+                .tiresList__itemWrap
+                    .tiresList__itemLeft
+                        .tiresList__name WANLI
+                        .tiresList__model SA302
+                        .tiresList__modelInfo
+                            .tiresList__infoItem 225/45 R17
+                            .tiresList__infoItem.tiresList__infoItem--border 94 W
+                            .tiresList__infoItem.tiresList__infoItem--border
+                                | Класс
+                                span C+
+                            .tiresList__infoItem.tiresList__infoItem--border Евроэтикетка
+                        .tiresList__aboutBlock
+                            .tiresList__imgBlock
+                                img(src="./img/img-tires-tire.jpg", alt="#", data-object-fit="contain")
+                                .tiresList__weather
+                                    img(src="./img/img-prod-sun.png", alt="#")
+                                .tiresList__videoBtn
+                                    img(src="./img/img-prod-videoBtn.png", alt="#")
+                                    span Видео
+                                .tiresList__compare
+                                    input(type="checkbox" id="compare")
+                                    label(for="compare").tiresList__compareCheck Сравнить
+                            .tiresList__smallInfo
+                                ul
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Сезонность:
+                                        .tiresList__smallInfoValue Летняя
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Протектор/Вес
+                                        .tiresList__smallInfoValue 8 мм / 11 кг
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Производство:
+                                        .tiresList__smallInfoValue Китай
+                    .tiresList__itemRight
+                        .tiresList__options
+                            .tiresList__option
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-1')
+                                .tiresList__optionText Бесплатная доставка
+                            .tiresList__option
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-10')
+                                .tiresList__optionText Гарантия 2 года
+                            .tiresList__option 
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-7')
+                                .tiresList__optionText Рассрочка до 6 месяцев
+                        .tiresList__price
+                            .tiresList__oldPrice
+                                span.tiresList__oldPriceLabel цена
+                                span.span.tiresList__oldPriceNumber 209.50
+                                | р.
+                            .tiresList__newPrice
+                                span.tiresList__newPriceLabel цена со скидкой
+                                span.tiresList__newPriceNumber 184.36 
+                                |р.
+                        .tiresList__stock
+                            span В наличии:
+                            | более 10 шт.
+                        .tiresList__order
+                            .tiresList__select
+                                .tiresList__selectLabel Количество:
+                                select(name="form_select_product" id="form-select-product").tiresList__capacitySelect
+                                        option(value="1" selected="selected") 4
+                                        option(value="2") 1
+                                        option(value="3") 2
+                                        option(value="5") 8
+                            button(type="button").tiresList__buyButton КУПИТЬ
+            .tiresList__item.tiresList__item--banner
+                .tiresList__itemWrap
+                    .tiresList__itemLeft
+                        .tiresList__name WANLI
+                        .tiresList__model SA302
+                        .tiresList__modelInfo
+                            .tiresList__infoItem 225/45 R17
+                            .tiresList__infoItem.tiresList__infoItem--border 94 W
+                            .tiresList__infoItem.tiresList__infoItem--border
+                                | Класс
+                                span C+
+                            .tiresList__infoItem.tiresList__infoItem--border Евроэтикетка
+                        .tiresList__aboutBlock
+                            .tiresList__imgBlock
+                                img(src="./img/img-tires-tire.jpg", alt="#", data-object-fit="contain")
+                                .tiresList__weather
+                                    img(src="./img/img-prod-sun.png", alt="#")
+                                .tiresList__videoBtn
+                                    img(src="./img/img-prod-videoBtn.png", alt="#")
+                                    span Видео
+                                .tiresList__compare
+                                    input(type="checkbox" id="compare")
+                                    label(for="compare").tiresList__compareCheck Сравнить
+                            .tiresList__smallInfo
+                                ul
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Сезонность:
+                                        .tiresList__smallInfoValue Летняя
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Протектор/Вес
+                                        .tiresList__smallInfoValue 8 мм / 11 кг
+                                    li.tiresList__smallInfoItem
+                                        .tiresList__smallInfoName Производство:
+                                        .tiresList__smallInfoValue Китай
+                    .tiresList__itemRight
+                        .tiresList__options
+                            .tiresList__option
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-1')
+                                .tiresList__optionText Бесплатная доставка
+                            .tiresList__option
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-10')
+                                .tiresList__optionText Гарантия 2 года
+                            .tiresList__option 
+                                .tiresList__optionImg
+                                    span
+                                        +icon('ico-helper-menu-7')
+                                .tiresList__optionText Рассрочка до 6 месяцев
+                        .tiresList__price
+                            .tiresList__oldPrice
+                                span.tiresList__oldPriceLabel цена
+                                span.span.tiresList__oldPriceNumber 209.50
+                                | р.
+                            .tiresList__newPrice
+                                span.tiresList__newPriceLabel цена со скидкой
+                                span.tiresList__newPriceNumber 184.36 
+                                |р.
+                        .tiresList__stock
+                            span В наличии:
+                            | более 10 шт.
+                        .tiresList__order
+                            .tiresList__select
+                                .tiresList__selectLabel Количество:
+                                select(name="form_select_product" id="form-select-product").tiresList__capacitySelect
+                                        option(value="1" selected="selected") 4
+                                        option(value="2") 1
+                                        option(value="3") 2
+                                        option(value="5") 8
+                            button(type="button").tiresList__buyButton КУПИТЬ
+                .tiresList__banner(style="background-image: url('../img/img-tires-bannerBg.jpg');")
+                    .tiresList__bannerText
+                        .tiresList__bannerTextTop ШИНОМОНТАЖ В ПОДАРОК
+                        .tiresList__bannerTextBottom при покупке 4 шин MAXXIS диаметром от 17” 
+                    button(type="button").tiresList__bannerBtn подробнее 
+                    .tiresList__bannerTires
+                        img(src="./img/img-tires-bannerTires.png", alt="#")
+                    .tiresList__bannerLogoWrap
+                        .tiresList__bannerLogo
+                            img(src="./img/img-tires-bannerLogo.png", alt="#")
+    .container
+        .page-pagination__wrapper.page-pagination__wrapper--white
+            a(href="#").page-pagination__navigation.page-pagination__navigation--prev.hidden
+                +icon("ico-arrow-right-grey")
+            a(href="#").active 1
+            a(href="#") 2
+            a(href="#") 3
+            a(href="#").other ...
+            a(href="#") 5
+            a(href="#").page-pagination__navigation
+                +icon("ico-arrow-right-grey")
+
+
+
