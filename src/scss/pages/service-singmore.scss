@@ -342,6 +342,16 @@
     font-weight: 400;
     margin-bottom: 38px;
     padding-left: 20px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #666666;
+
+      svg {
+        fill: #ff2c2c!important;
+      }
+    }
 
     svg {
       position: absolute;
@@ -350,6 +360,8 @@
       width: 14px;
       height: 22px;
       fill: #e2001a;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
     }
   }
 
@@ -458,6 +470,313 @@
     &:hover {
       background-color: #ff2c2c;
     }
+  }
+}
+
+.popup-block {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 500;
+}
+
+.popup-onmap {
+  display: block;
+  visibility: hidden;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 100%;
+  max-width: 920px;
+  background-color: #fff;
+  z-index: 1500;
+  transform: translate3d(-50%, 0, 1px);
+  padding: 22px 35px 30px 35px;
+  border-radius: 7px;
+  margin-bottom: 70px;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 40px 15px 15px 15px;
+  }
+
+  &.visible {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+  }
+
+  &__title {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 24px;
+    font-family: "roboto", sans-serif;
+    font-size: 27px;
+    line-height: 1.2em;
+    color: #4c4c4c;
+    font-weight: 700;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+      line-height: 1em;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+
+    @media (max-width: $screen-md-max) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+    margin-top: 4px;
+    width: 403px;
+    height: 268px;
+
+    @media (max-width: $screen-md-max) {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    width: calc(100% - 427px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media (max-width: $screen-md-max) {
+      width: 100%;
+    }
+  }
+
+  &__tel {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__work {
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+
+  &__info-title {
+    display: block;
+    width: 100%;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+
+  &__phone {
+    display: flex;
+    margin-bottom: 5px;
+
+    &:hover {
+      a {
+        color: #666666;
+      }
+    }
+  }
+
+  &__phone-icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      fill: #bf0000;
+    }
+  }
+
+  &__phone-link {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  &__work-wrapper {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  
+  &__work-text {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    
+    &--grey {
+      color: #666666;
+    }
+  }
+
+  &__spec {
+    display: block;
+    width: 100%;
+    margin: 20px 0 64px;
+    font-family: "roboto", sans-serif;
+    color: #e2001a;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    @media (max-width: $screen-md-max) {
+      width: 47%;
+    }
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+      margin: 20px 0 30px;
+    }
+
+    &:hover {
+      color: #ff2c2c;
+    }
+  }
+
+  &__gps {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__gps-text {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+  }
+
+  &__map {
+    width: 100%;
+    height: 263px;
+  }
+
+  &__map-wrapper {
+    margin-bottom: 16px;
+
+    .popup-onmap__info-title {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: $screen-xs-max) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__information-item {
+    width: 50%;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__information-title {
+    display: block;
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+
+  &__information-text {
+    position: relative;
+    display: block;
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    font-weight: 400;
+
+    &:before {
+      content: '• ';
+      font-family: "roboto", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #666666;
+      font-weight: 400;
+    }
+  }
+}
+
+.popup-close {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      fill: #4c4c4c;
+    }
+  }
+
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    fill: #666666;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 }
 

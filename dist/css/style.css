@@ -1986,6 +1986,17 @@ b, strong {
   font-weight: 700;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
 .media-company {
   margin-bottom: 33px;
   padding: 26px 0;
@@ -6888,6 +6899,15 @@ b, strong {
   font-weight: 400;
   margin-bottom: 38px;
   padding-left: 20px;
+  transition: all 0.2s ease;
+}
+
+.singmore-calendar__onmap:hover {
+  color: #666666;
+}
+
+.singmore-calendar__onmap:hover svg {
+  fill: #ff2c2c !important;
 }
 
 .singmore-calendar__onmap svg {
@@ -6897,6 +6917,7 @@ b, strong {
   width: 14px;
   height: 22px;
   fill: #e2001a;
+  transition: all 0.2s ease;
 }
 
 .singmore-calendar__icons {
@@ -7004,6 +7025,347 @@ b, strong {
 
 .singmore-calendar__btn:hover {
   background-color: #ff2c2c;
+}
+
+.popup-block {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 500;
+}
+
+.popup-onmap {
+  display: block;
+  visibility: hidden;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 100%;
+  max-width: 920px;
+  background-color: #fff;
+  z-index: 1500;
+  transform: translate3d(-50%, 0, 1px);
+  padding: 22px 35px 30px 35px;
+  border-radius: 7px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 543px) {
+  .popup-onmap {
+    padding: 40px 15px 15px 15px;
+  }
+}
+
+.popup-onmap.visible {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+}
+
+.popup-onmap__title {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 24px;
+  font-family: "roboto", sans-serif;
+  font-size: 27px;
+  line-height: 1.2em;
+  color: #4c4c4c;
+  font-weight: 700;
+}
+
+@media (max-width: 543px) {
+  .popup-onmap__title {
+    font-size: 20px;
+    line-height: 1em;
+    margin-bottom: 20px;
+  }
+}
+
+.popup-onmap__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 959px) {
+  .popup-onmap__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.popup-onmap__img {
+  margin-top: 4px;
+  width: 403px;
+  height: 268px;
+}
+
+@media (max-width: 959px) {
+  .popup-onmap__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.popup-onmap__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-onmap__info {
+  width: calc(100% - 427px);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@media (max-width: 959px) {
+  .popup-onmap__info {
+    width: 100%;
+  }
+}
+
+.popup-onmap__tel {
+  width: 47%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 543px) {
+  .popup-onmap__tel {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.popup-onmap__work {
+  width: 53%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 543px) {
+  .popup-onmap__work {
+    width: 100%;
+  }
+}
+
+.popup-onmap__info-title {
+  display: block;
+  width: 100%;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.popup-onmap__phone {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.popup-onmap__phone:hover a {
+  color: #666666;
+}
+
+.popup-onmap__phone-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.popup-onmap__phone-icon svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  fill: #bf0000;
+}
+
+.popup-onmap__phone-link {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.popup-onmap__work-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup-onmap__work-wrapper:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.popup-onmap__work-text {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.popup-onmap__work-text--grey {
+  color: #666666;
+}
+
+.popup-onmap__spec {
+  display: block;
+  width: 100%;
+  margin: 20px 0 64px;
+  font-family: "roboto", sans-serif;
+  color: #e2001a;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 959px) {
+  .popup-onmap__spec {
+    width: 47%;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup-onmap__spec {
+    width: 100%;
+    margin: 20px 0 30px;
+  }
+}
+
+.popup-onmap__spec:hover {
+  color: #ff2c2c;
+}
+
+.popup-onmap__gps {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.popup-onmap__gps-text {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.popup-onmap__map {
+  width: 100%;
+  height: 263px;
+}
+
+.popup-onmap__map-wrapper {
+  margin-bottom: 16px;
+}
+
+.popup-onmap__map-wrapper .popup-onmap__info-title {
+  margin-bottom: 8px;
+}
+
+.popup-onmap__information {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 543px) {
+  .popup-onmap__information {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.popup-onmap__information-item {
+  width: 50%;
+}
+
+@media (max-width: 543px) {
+  .popup-onmap__information-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.popup-onmap__information-title {
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.popup-onmap__information-text {
+  position: relative;
+  display: block;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.popup-onmap__information-text:before {
+  content: '• ';
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.popup-close {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.popup-close:hover svg {
+  fill: #4c4c4c;
+}
+
+.popup-close svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  fill: #666666;
+  transition: all 0.2s ease;
 }
 
 .ui-datepicker-week-end {
