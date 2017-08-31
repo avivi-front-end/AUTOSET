@@ -23,7 +23,7 @@ var config = {
             dest: '.',
             bust: false,
             sprite: "sprite.svg",
-            // example: true
+            example: true
         }
     },
     svg: {

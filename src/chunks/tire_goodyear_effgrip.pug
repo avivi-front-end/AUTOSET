@@ -1,0 +1,257 @@
+.breadcrumbs
+    .container
+        a(href="/").breadcrumbs__link Главная
+        a(href="/").breadcrumbs__link Легковые шины
+        a(href="/").breadcrumbs__link Goodyear
+        a(href="/").breadcrumbs__link EfficientGrip Performance
+        a(href="/").breadcrumbs__link 225/45 R17 94W
+
+.prodCard
+    .container.wrap.wrapMdOFF
+        .prodCard__wrap
+            .prodCard__left
+                .prodCard__name GOODYEAR
+                .prodCard__model EfficientGrip Performance
+                .prodCard__code 225/45 R17 94 W
+                .prodCard__bigSlider
+                    .prodCard__bigSliderWrap.js-prodBigSlider
+                        .prodCard__bigSliderItem
+                            img(src="./img/img-prod-bigSliderImg.jpg", alt="#",data-object-fit="contain")
+                            a(href="#").prodCard__videoBtn
+                                img(src="./img/img-prod-videoBtn.png")
+                                span Видео
+                        .prodCard__bigSliderItem
+                            img(src="./img/img-prod-bigSliderImg-2.jpg", alt="#",data-object-fit="contain")
+                    .prodCard__weatherImg
+                        img(src="./img/img-prod-sun.png", alt="#")
+                    .prodCard__classImg
+                        span модель класса
+                        span.prodCard__prodClass A+
+                    
+                .prodCard__smallSlider
+                    .prodCard__smallSliderWrap.js-prodSmallSlider
+                        .prodCard__smallSliderItem
+                            img(src="./img/img-prod-bigSliderImg.jpg", alt="#", data-object-fit="contain")
+                        .prodCard__smallSliderItem
+                            img(src="./img/img-prod-bigSliderImg-2.jpg", alt="#", data-object-fit="contain")
+                .prodCard__types
+                    .prodCard__typeItem
+                        .prodCard__typeImg
+                            img(src="./img/img-prod-type-1.png", alt="#")
+                        span.prodCard__typeCode C
+                    .prodCard__typeItem
+                        .prodCard__typeImg
+                            img(src="./img/img-prod-type-2.png", alt="#")
+                        span.prodCard__typeCode A
+                    .prodCard__typeItem
+                        .prodCard__typeImg
+                            img(src="./img/img-prod-type-3.png", alt="#")
+                        span.prodCard__typeCode 69dB
+                .prodCard__compare
+                    input(type="checkbox" id="compare")
+                    label(for="compare").prodCard__compareCheck Сравнить
+            .prodCard__right
+                .prodCard__options
+                    .prodCard__option
+                        .prodCard__optionImg
+                            //- img(src="./img/img-prod-option-1.png", alt="#")
+                            span 
+                                +icon('ico-helper-menu-1')
+                        .prodCard__optionText Бесплатная доставка
+                    .prodCard__option
+                        .prodCard__optionImg
+                            //- img(src="./img/img-prod-option-2.png", alt="#")
+                            span 
+                                +icon('ico-helper-menu-10')
+                        .prodCard__optionText Гарантия 2 года
+                    .prodCard__option
+                        .prodCard__optionImg
+                            //- img(src="./img/img-prod-option-3.png", alt="#")
+                            span 
+                                +icon('ico-helper-menu-7')
+                        .prodCard__optionText Рассрочка до 6 месяцев
+                .prodCard__prices
+                    .prodCard__oldPrice
+                        span.prodCard__oldPriceLabel цена
+                        span.span.prodCard__oldPriceNumber 209.50
+                        | р.
+                    .prodCard__newPrice
+                        span.prodCard__newPriceLabel цена со скидкой
+                        span.prodCard__newPriceNumber 184.36 
+                        |р.
+                form(action="")
+                    .prodCard__capacity
+                        .prodCard__capacityInput
+                            span Количество:
+                            select(name="form_select_product" id="form-select-product").prodCard__capacitySelect
+                                    option(value="1" selected="selected") 4
+                                    option(value="2") 1
+                                    option(value="3") 2
+                                    option(value="5") 8
+                        .prodCard__capacityStock
+                            span В наличии:
+                            |более 10 шт.
+                    .prodCard__orderBlock
+                        .prodCard__orderPrice
+                            .prodCard__orderPriceText
+                                |цена за 
+                                span 4 шт.
+                                |со скидкой:
+                            .prodCard__orderPriceNumber
+                                span 737.44
+                                |р.
+                        button(type="button").prodCard__orderBtn КУПИТЬ
+                ul.prodCard__infoList
+                    li.prodCard__infoItem
+                        .prodCard__infoName Сезонность:
+                        .prodCard__infoValue Летняя
+                    li.prodCard__infoItem
+                        .prodCard__infoName Протектор/Вес
+                        .prodCard__infoValue A+ (Премиум Плюс)
+                    li.prodCard__infoItem
+                        .prodCard__infoName Индекс нагрузки:
+                        .prodCard__infoValue 94 (до 670 кг)
+                    li.prodCard__infoItem
+                        .prodCard__infoName Показатель нагрузки на 4 колеса:
+                        .prodCard__infoValue до 2680 кг
+                    li.prodCard__infoItem
+                        .prodCard__infoName Индекс нагрузки:
+                        .prodCard__infoValue W (до 270 км/ч)
+                    li.prodCard__infoItem
+                        .prodCard__infoName Протектор / вес:
+                        .prodCard__infoValue 7,5 мм / 8 кг
+                    li.prodCard__infoItem
+                        .prodCard__infoName Рисунок протектора:
+                        .prodCard__infoValue Асимметричный направленный
+                    li.prodCard__infoItem
+                        .prodCard__infoName Преимущественное покрытие:
+                        .prodCard__infoValue 100% асфальт 0% бездорожье
+                    li.prodCard__infoItem
+                        .prodCard__infoName Производство:
+                        .prodCard__infoValue Германия
+                    li.prodCard__infoItem
+                        .prodCard__infoName Защита диска:
+                        .prodCard__infoValue Нет
+                    li.prodCard__infoItem
+                        .prodCard__infoName Маркировка M+S:
+                        .prodCard__infoValue Нет
+                    li.prodCard__infoItem
+                        .prodCard__infoName Маркировка All seasons:
+                        .prodCard__infoValue Нет
+                .prodCard__made
+                    .prodCard__madeLabel Изготовитель (оригинал):
+                    .prodCard__madeBy
+                        div Goodyear Dunlop Tires Germany Gmbh. 
+                        div Konzernsitz und Werk Hanau. 
+                        div Dunlopstr. 2 63450 Hanau Germany
+
+        a(href="#").prodCard__backBtn Вернуться к результатам подбора
+
+.prodInfo
+    .container.wrap.wrapMdOFF
+        .prodInfo__tabs
+            .prodInfo__tabsTitle Дополнительная информация о товаре
+            ul.prodInfo__tabsLine
+                li.prodInfo__tabItem.active.js-prodTab Описание
+                li.prodInfo__tabItem.js-prodTab Доставка
+                li.prodInfo__tabItem.js-prodTab Оплат
+                li.prodInfo__tabItem.js-prodTab Рассрочка
+                li.prodInfo__tabItem.js-prodTab Гарантия
+                li.prodInfo__tabItem.js-prodTab Класс модели
+                li.prodInfo__tabItem.js-prodTab Отзывы
+            .prodInfo__tabsBlocks
+                .prodInfo__tabBlock.js-prodTabBlock.active
+                    p.prodInfo__tabPar Летние шины <span>Goodyear EfficientGrip Performance</span> имеют высшую оценку за торможение на мокром асфальте согласно европейской маркировке. Вместе с тем очень хороши и другие свойства шины, например, сцепление с сухим дорожным полотном, скорость переставки, следование курсу и расход топлива. Это подтверждают первые строчки и призовые места в ряде тестов, проведённых европейскими автомобильными экспертами. Специалисты как один рекомендуют шину всем автовладельцам, которые заботятся о безопасности и комфорте.
+                    .prodInfo__tabOptions
+                        .prodInfo__optionsTitle Технические особенности протектора Goodyear EfficientGrip Performance:
+                        ul.prodInfo__optionsList
+                            li.prodInfo__tabOption Вместительные дренажные колодцы в центральной зоне отводят воду из пятна контакта за мгновение.
+                            li.prodInfo__tabOption Крупные боковые блоки удерживают устойчивость автомобиля при прохождении сложных поворотов.
+
+                    .prodInfo__tabSlogan Goodyear – премиальный бред из числа лучших шинных компаний.
+                
+                .prodInfo__tabBlock.js-prodTabBlock
+                    p.prodInfo__tabPar Летние шины <span>Goodyear EfficientGrip Performance</span> асфальте согласно европейской маркировке. Вместе с тем очень хороши и другие свойства шины, например, сцепление с сухим дорожным полотном, скорость переставки, следование курсу и расход топлива. Это подтверждают первые строчки и призовые места в ряде тестов, проведённых европейскими автомобильными экспертами. Специалисты как один рекомендуют шину всем автовладельцам, которые заботятся о безопасности и комфорте.
+                    .prodInfo__tabOptions
+                        .prodInfo__optionsTitle Технические особенности протектора Goodyear EfficientGrip Performance:
+                        ul.prodInfo__optionsList
+                            li.prodInfo__tabOption Вместительные дренажные колодцы в центральной зоне отводят воду из пятна контакта за мгновение.
+                            li.prodInfo__tabOption Крупные боковые блоки удерживают устойчивость автомобиля при прохождении сложных поворотов.
+
+                    .prodInfo__tabSlogan Goodyear – премиальный бред из числа лучших шинных компаний.
+                
+                .prodInfo__tabBlock.js-prodTabBlock
+                    p.prodInfo__tabPar Летние шины <span>Goodyear EfficientGrip Performance</span> имеют высшую оценку за торможение на мокром асфальте согласно европейской маркировке. Вместе с тем очень хороши и другие свойства шины, например, сцепление с сухим дорожным полотном, скорость переставки, следование курсу и расход топлива. Это подтверждают первые строчки и призовые места в ряде тестов, проведённых европейскими автомобильными экспертами. Специалисты как один рекомендуют шину всем автовладельцам, которые заботятся о безопасности и комфорте.
+                    .prodInfo__tabOptions
+                        .prodInfo__optionsTitle Технические особенности протектора Goodyear EfficientGrip Performance:
+                        ul.prodInfo__optionsList
+                            li.prodInfo__tabOption Вместительные дренажные колодцы в центральной зоне отводят воду из пятна контакта за мгновение.
+
+                    .prodInfo__tabSlogan Goodyear – премиальный бред из числа лучших шинных компаний.
+                
+                .prodInfo__tabBlock.js-prodTabBlock
+                    p.prodInfo__tabPar Летние шины <span>Goodyear EfficientGrip Performance</span> имеют высшую оценку за торможение на мокром асфальте согласно европейской маркировке. Вместе с тем очень хороши и другие свойства шины, например, сцепление с сухим дорожным полотном, скорость переставки, следование курсу и расход топлива. Это подтверждают первые строчки и призовые места в ряде тестов, проведённых европейскими автомобильными экспертами. Специалисты как один рекомендуют шину всем автовладельцам, которые заботятся о безопасности и комфорте.
+                    .prodInfo__tabOptions
+                        .prodInfo__optionsTitle Технические особенности протектора Goodyear EfficientGrip Performance:
+                        ul.prodInfo__optionsList
+                            li.prodInfo__tabOption Вместительные дренажные колодцы в центральной зоне отводят воду из пятна контакта за мгновение.
+                            li.prodInfo__tabOption Крупные боковые блоки удерживают устойчивость автомобиля при прохождении сложных поворотов.
+
+                    .prodInfo__tabSlogan Goodyear – премиальный бред из числа лучших шинных компаний.
+                
+                .prodInfo__tabBlock.js-prodTabBlock
+                    p.prodInfo__tabPar Летние шины <span>Goodyear EfficientGrip Performance</span> имеют высшую оценку за торможение на мокром асфальте согласно европейской маркировке. Вместе с тем очень хороши и другие свойства шины, например, сцепление с сухим дорожным полотном, скорость переставки, следование курсу и расход топлива. Это подтверждают первые строчки и призовые места в ряде тестов, проведённых европейскими автомобильными экспертами. Специалисты как один рекомендуют шину всем автовладельцам, которые заботятся о безопасности и комфорте.
+                    .prodInfo__tabOptions
+                        .prodInfo__optionsTitle Технические особенности протектора Goodyear EfficientGrip Performance:
+                        ul.prodInfo__optionsList
+                            li.prodInfo__tabOption Вместительные дренажные колодцы в центральной зоне отводят воду из пятна контакта за мгновение.
+                            li.prodInfo__tabOption Крупные боковые блоки удерживают устойчивость автомобиля при прохождении сложных поворотов.
+
+                    .prodInfo__tabSlogan Goodyear – премиальный бред из числа лучших шинных компаний.
+                
+                .prodInfo__tabBlock.js-prodTabBlock
+                    p.prodInfo__tabPar Летние шины <span>Goodyear EfficientGrip Performance</span> имеют высшую оценку за торможение на мокром асфальте согласно европейской маркировке. Вместе с тем очень хороши и другие свойства шины, например, сцепление с сухим дорожным полотном, скорость переставки, следование курсу и расход топлива. Это подтверждают первые строчки и призовые места в ряде тестов, проведённых европейскими автомобильными экспертами. Специалисты как один рекомендуют шину всем автовладельцам, которые заботятся о безопасности и комфорте.
+                    .prodInfo__tabOptions
+                        .prodInfo__optionsTitle Технические особенности протектора Goodyear EfficientGrip Performance:
+                        ul.prodInfo__optionsList
+                            li.prodInfo__tabOption Вместительные дренажные колодцы в центральной зоне отводят воду из пятна контакта за мгновение.
+                            li.prodInfo__tabOption Крупные боковые блоки удерживают устойчивость автомобиля при прохождении сложных поворотов.
+
+                    .prodInfo__tabSlogan Goodyear – премиальный бред из числа лучших шинных компаний.
+                
+                .prodInfo__tabBlock.js-prodTabBlock
+                    p.prodInfo__tabPar Летние шины <span>Goodyear EfficientGrip Performance</span> имеют высшую оценку за торможение на мокром асфальте согласно европейской маркировке. Вместе с тем очень хороши и другие свойства шины, например, сцепление с сухим дорожным полотном, скорость переставки, следование курсу и расход топлива. Это подтверждают первые строчки и призовые места в ряде тестов, проведённых европейскими автомобильными экспертами. Специалисты как один рекомендуют шину всем автовладельцам, которые заботятся о безопасности и комфорте.
+                    .prodInfo__tabOptions
+                        .prodInfo__optionsTitle Технические особенности протектора Goodyear EfficientGrip Performance:
+                        ul.prodInfo__optionsList
+                            li.prodInfo__tabOption Вместительные дренажные колодцы в центральной зоне отводят воду из пятна контакта за мгновение.
+                            li.prodInfo__tabOption Крупные боковые блоки удерживают устойчивость автомобиля при прохождении сложных поворотов.
+
+                    .prodInfo__tabSlogan Goodyear – премиальный бред из числа лучших шинных компаний.
+                
+        .prodInfo__mainLinks
+            .prodInfo__linkItem
+                .prodInfo__linkImg
+                    //- img(src="./img/img-prod-link-1.png", alt="#")
+                    span 
+                        +icon('ico-helper-menu-1')
+                .prodInfo__linkBtnWrap
+                    a(href="#").prodInfo__linkBtn Бесплатная доставка
+                .prodInfo__linkText Доставка шин в магазины "Автосеть" осуществляется бесплатно. Стоимость доставки в любой другой город составляет 12 руб.
+            .prodInfo__linkItem
+                .prodInfo__linkImg
+                    //- img(src="./img/img-prod-link-2.png", alt="#")
+                    span 
+                        +icon('ico-helper-menu-4')
+                .prodInfo__linkBtnWrap
+                    a(href="#").prodInfo__linkBtn Доставка к сервису
+                .prodInfo__linkText Мы осуществляем доставку шин в сеть собственных шинных центров. Мы даем скидку на профессиональный шиномонтаж
+            .prodInfo__linkItem
+                .prodInfo__linkImg
+                    img(src="./img/img-prod-link-3.png", alt="#")
+                    //- span 
+                    //-     +icon('prod-leader')
+                .prodInfo__linkBtnWrap
+                    a(href="#").prodInfo__linkBtn Лидер на рынке шин
+                .prodInfo__linkText Являемся лидером на рынке продажи шин в Республике Беларусь
+
