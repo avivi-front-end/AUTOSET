@@ -1512,8 +1512,6 @@ label.error {
 
 .jq-selectbox__dropdown ul {
   position: relative;
-  overflow: auto;
-  overflow-x: hidden;
   list-style: none;
   -webkit-overflow-scrolling: touch;
 }
@@ -10994,7 +10992,7 @@ a.ui-button:active,
 }
 
 .tiresFiler__filterSelect .jq-selectbox__dropdown li {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 600;
   width: 100% !important;
 }
