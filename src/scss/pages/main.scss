@@ -170,7 +170,22 @@ label.error {
   }
 }
 
+.index {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
 
+  a {
+    color: #e2001a;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #ff2c2c;
+    }
+  }
+}
 
 .jq-checkbox,
 .jq-radio {
@@ -764,4 +779,15 @@ input[type='submit'].styler[disabled] {
 
 b, strong {
   font-weight: 700;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.2);
+  z-index: 1000;
 }

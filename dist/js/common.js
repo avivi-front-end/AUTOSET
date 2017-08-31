@@ -185,6 +185,31 @@ $(function() {
             }
         });
 
+        $("#service-works-form").validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true
+                },
+                text: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Введите имя"
+                },
+                email: {
+                    required: "Введите e-mail"
+                },
+                text: {
+                    required: "Введите сообщение"
+                }
+            }
+        });
+
 
     });
 
@@ -241,6 +266,7 @@ $(function() {
         });
 
     })();
+
 
     var offersTimer = (function() {
         var timers = $('.js-offersTimer');
@@ -300,23 +326,62 @@ $(function() {
             $(this).addClass('active');
             $('.js-tiresTabBlock').eq(ind).addClass('active');
         }
-    })
+    });
+
+    var flag = 0;
+
+
+    $('.js-showonmap').click(function () {
+
+        $('.overlay').fadeIn();
+        $('.popup-onmap').addClass('visible');
+
+        // $('html, body').css('overflow','hidden');
+
+        if (flag == 0) {
+            initMapPopup();
+            flag = 1;
+        }
+    });
+
+    var closePopup = (function () {
+        $('.overlay').fadeOut();
+        $('.popup-onmap').removeClass('visible');
+
+        // $('html, body').css('overflow','visible');
+    });
+
+    $('.overlay, .js-close-popup').click(function () {
+        closePopup();
+    });
+
 
 });
-
 
 //   stroke-linejoin="bevel" fill-rule="evenodd" 
 
 function initMap() {
+
+    // СЕРЕДИНА КАРТЫ
+
     var uluru = {lat: 53.893028, lng: 27.647750};
+
+    // ЗУМ КАРТЫ
+
     var mapZoom = 7;
     if ($(window).outerWidth() < 543 ) {
         mapZoom = 5;
     }
+
+    // КАРТЫ
+
     var map = new google.maps.Map(document.getElementById('contact-map'), {
         zoom: mapZoom,
         center: uluru
     });
+
+
+    // ТОЧКИ НА КАРТАХ НА СТРАНИЦЕ КОНТАКТЫ
 
     var adresss1 = new google.maps.Marker({
         position: {lat: 53.893028, lng: 27.647750},
@@ -374,12 +439,34 @@ function initMap() {
         }
     });
 
+
+    // СТИЛИЗАЦИЯ КАРТЫ
+
     var styles = [{"featureType":"all","elementType":"geometry","stylers":[{"color":"#f5f5f5"}]},{"featureType":"all","elementType":"geometry","stylers":[{"color":"#f5f5f5"}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#f5f5f5"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#3d4037"}]},{"featureType":"administrative.locality","elementType":"labels.text","stylers":[{"visibility":"simplified"},{"color":"#3d4037"}]},{"featureType":"administrative.province","elementType":"geometry.fill","stylers":[{"visibility":"off"},{"color":"#3d4037"}]},{"featureType":"administrative.province","elementType":"labels","stylers":[{"visibility":"on"},{"color":"#3d4037"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"visibility":"on"},{"color":"#3d4037"},{"weight":1}]},{"featureType":"administrative.province","elementType":"labels.text","stylers":[{"color":"#3d4037"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#dadada"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c9c9c9"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#000000"}]},{"featureType":"administrative.locality","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"labels","stylers":[{"visibility":"simplified"}]}];
 
     map.setOptions({
         styles: styles
     });
 
+}
+
+
+function initMapPopup() {
+
+    var popupCenterMap = {lat: 52.108611, lng: 23.747944};
+
+    var mapPopup = new google.maps.Map(document.getElementById('popup-map'), {
+        zoom: 16,
+        center: popupCenterMap
+    });
+
+    var popupmarker = new google.maps.Marker({
+        position: popupCenterMap,
+        map: mapPopup,
+        icon: {
+            url: 'img/sprites/ico-contacts-map-pointer-small.png'
+        }
+    });
 }
 
 

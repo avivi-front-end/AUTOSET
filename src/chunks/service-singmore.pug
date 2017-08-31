@@ -61,7 +61,7 @@
             .singmore-calendar__item.singmore-calendar__item--calendar
                 span.singmore-calendar__title Шиномонтаж
                 span.singmore-calendar__adress г. Брест ул. Янки Купалы, 19
-                a(href="#").singmore-calendar__onmap показать на карте
+                a(href="#").singmore-calendar__onmap.js-showonmap показать на карте
                     +icon("ico-singmore-map")
                 .singmore-calendar__calendar#service-calendar
 
@@ -121,3 +121,88 @@
                     a(href="#").singmore-calendar__times-item
 
                 span.singmore-calendar__btn Продолжить запись
+
+
+
+.overlay
+.popup-onmap
+    .popup-close.js-close-popup
+        +icon("ico-close-popup")
+    span.popup-onmap__title Торгово-сервисный центр г. Брест, ул. Янки Купалы
+    .popup-onmap__wrapper
+        .popup-onmap__img
+            img(src="img/img-popup-pict.jpg" alt="")
+        .popup-onmap__info
+            .popup-onmap__tel
+                span.popup-onmap__info-title Телефоны:
+                .popup-onmap__phone
+                    .popup-onmap__phone-icon
+                        +icon("ico-phone")
+                    a(href="tel:+375162406880").popup-onmap__phone-link +375 (162) 40-68-80
+
+                .popup-onmap__phone
+                    .popup-onmap__phone-icon
+                        +icon("ico-velcom")
+                    a(href="tel:+375293300700").popup-onmap__phone-link +375 (29) 3-300-700
+
+                .popup-onmap__phone
+                    .popup-onmap__phone-icon
+                        +icon("ico-mts")
+                    a(href="tel:+375295200700").popup-onmap__phone-link +375 (29) 5-200-700
+
+            .popup-onmap__work
+                span.popup-onmap__info-title Режим работы:
+                .popup-onmap__work-wrapper
+                    span.popup-onmap__work-text.popup-onmap__work-text--grey пн-сб:&nbsp;
+                    span.popup-onmap__work-text 8:00 - 21:00
+                .popup-onmap__work-wrapper
+                    span.popup-onmap__work-text.popup-onmap__work-text--grey ВС:&nbsp;
+                    span.popup-onmap__work-text 9:00 - 18:00
+
+            a(href="#").popup-onmap__spec Специальные цены на услуги сервиса <br>Комплексная подготовка автомобиля к лету
+
+            .popup-onmap__gps
+                span.popup-onmap__info-title Координаты GPS:
+                span.popup-onmap__gps-text 52°6′31″N
+                span.popup-onmap__gps-text 23°44′52.6″E
+    .popup-onmap__map-wrapper
+        span.popup-onmap__info-title Расположение на карте:
+        .popup-onmap__map#popup-map
+
+    .popup-onmap__information
+        .popup-onmap__information-item
+            span.popup-onmap__information-title Продажа:
+            span.popup-onmap__information-text шины для легковых, легкогрузовых, внедорожников и грузовых автомобилей;
+            span.popup-onmap__information-text диски для легковых, легкогрузовых, внедорожников и грузовых автомобилей;
+            span.popup-onmap__information-text аккумуляторы для легковых и грузовых автомобилей;
+            span.popup-onmap__information-text крепёжные элементы: болты, гайки, шпильки, секретки, центровочные кольца;
+            span.popup-onmap__information-text автозапчасти;
+            span.popup-onmap__information-text масла, фильтры;
+            span.popup-onmap__information-text технические жидкости;
+            span.popup-onmap__information-text автохимия;
+            span.popup-onmap__information-text автоаксессуары;
+            span.popup-onmap__information-text детские автокресла;
+            span.popup-onmap__information-text ключи, наборы инструментов;
+            span.popup-onmap__information-text колесные колпаки.
+
+        .popup-onmap__information-item
+            span.popup-onmap__information-title Услуги:
+            span.popup-onmap__information-text шиномонтаж легкового и грузового авто;
+            span.popup-onmap__information-text балансировка колес;
+            span.popup-onmap__information-text ремонт шины;
+            span.popup-onmap__information-text развал-схождение (регулировка углов установки колёс);
+            span.popup-onmap__information-text замена масла, фильтров;
+            span.popup-onmap__information-text замена и проверка охлаждающей жидкости, замена системы охлаждения;
+            span.popup-onmap__information-text заправка и дезинфекция кондиционеров;
+            span.popup-onmap__information-text замена и диагностика аккумулятора;
+            span.popup-onmap__information-text компьютерная диагностика автомобиля;
+            span.popup-onmap__information-text ремонт электрооборудования;
+            span.popup-onmap__information-text диагностика и ремонт подвески;
+            span.popup-onmap__information-text замена выхлопной системы;
+            span.popup-onmap__information-text ремонт и замена тормозной системы;
+            span.popup-onmap__information-text замена клиновых и ручейковых ремней;
+            span.popup-onmap__information-text чистка ЕГР;
+            span.popup-onmap__information-text сезонное хранение шин;
+
+
+script(defer="", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb2OuKaE3NLGJyzXymywkKFfWv-7Enx9E&callback=initMapPopup")

@@ -73,7 +73,7 @@
       <div class="singmore-calendar">
         <div class="container wrap">
           <div class="singmore-calendar__wrapper">
-            <div class="singmore-calendar__item singmore-calendar__item--calendar"><span class="singmore-calendar__title">Шиномонтаж</span><span class="singmore-calendar__adress">г. Брест ул. Янки Купалы, 19</span><a class="singmore-calendar__onmap" href="#">показать на карте
+            <div class="singmore-calendar__item singmore-calendar__item--calendar"><span class="singmore-calendar__title">Шиномонтаж</span><span class="singmore-calendar__adress">г. Брест ул. Янки Купалы, 19</span><a class="singmore-calendar__onmap js-showonmap" href="#">показать на карте
                 <svg class="icon icon-ico-singmore-map ">
                   <use xlink:href="img/svgsprite/sprite.svg#ico-singmore-map"></use>
                 </svg></a>
@@ -86,6 +86,55 @@
           </div>
         </div>
       </div>
+      <div class="overlay"></div>
+      <div class="popup-onmap">
+        <div class="popup-close js-close-popup">
+          <svg class="icon icon-ico-close-popup ">
+            <use xlink:href="img/svgsprite/sprite.svg#ico-close-popup"></use>
+          </svg>
+        </div><span class="popup-onmap__title">Торгово-сервисный центр г. Брест, ул. Янки Купалы</span>
+        <div class="popup-onmap__wrapper">
+          <div class="popup-onmap__img"><img src="img/img-popup-pict.jpg" alt=""></div>
+          <div class="popup-onmap__info">
+            <div class="popup-onmap__tel"><span class="popup-onmap__info-title">Телефоны:</span>
+              <div class="popup-onmap__phone">
+                <div class="popup-onmap__phone-icon">
+                  <svg class="icon icon-ico-phone ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-phone"></use>
+                  </svg>
+                </div><a class="popup-onmap__phone-link" href="tel:+375162406880">+375 (162) 40-68-80</a>
+              </div>
+              <div class="popup-onmap__phone">
+                <div class="popup-onmap__phone-icon">
+                  <svg class="icon icon-ico-velcom ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-velcom"></use>
+                  </svg>
+                </div><a class="popup-onmap__phone-link" href="tel:+375293300700">+375 (29) 3-300-700</a>
+              </div>
+              <div class="popup-onmap__phone">
+                <div class="popup-onmap__phone-icon">
+                  <svg class="icon icon-ico-mts ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-mts"></use>
+                  </svg>
+                </div><a class="popup-onmap__phone-link" href="tel:+375295200700">+375 (29) 5-200-700</a>
+              </div>
+            </div>
+            <div class="popup-onmap__work"><span class="popup-onmap__info-title">Режим работы:</span>
+              <div class="popup-onmap__work-wrapper"><span class="popup-onmap__work-text popup-onmap__work-text--grey">пн-сб:&nbsp;</span><span class="popup-onmap__work-text">8:00 - 21:00</span></div>
+              <div class="popup-onmap__work-wrapper"><span class="popup-onmap__work-text popup-onmap__work-text--grey">ВС:&nbsp;</span><span class="popup-onmap__work-text">9:00 - 18:00</span></div>
+            </div><a class="popup-onmap__spec" href="#">Специальные цены на услуги сервиса <br>Комплексная подготовка автомобиля к лету</a>
+            <div class="popup-onmap__gps"><span class="popup-onmap__info-title">Координаты GPS:</span><span class="popup-onmap__gps-text">52°6′31″N</span><span class="popup-onmap__gps-text">23°44′52.6″E</span></div>
+          </div>
+        </div>
+        <div class="popup-onmap__map-wrapper"><span class="popup-onmap__info-title">Расположение на карте:</span>
+          <div class="popup-onmap__map" id="popup-map"></div>
+        </div>
+        <div class="popup-onmap__information">
+          <div class="popup-onmap__information-item"><span class="popup-onmap__information-title">Продажа:</span><span class="popup-onmap__information-text">шины для легковых, легкогрузовых, внедорожников и грузовых автомобилей;</span><span class="popup-onmap__information-text">диски для легковых, легкогрузовых, внедорожников и грузовых автомобилей;</span><span class="popup-onmap__information-text">аккумуляторы для легковых и грузовых автомобилей;</span><span class="popup-onmap__information-text">крепёжные элементы: болты, гайки, шпильки, секретки, центровочные кольца;</span><span class="popup-onmap__information-text">автозапчасти;</span><span class="popup-onmap__information-text">масла, фильтры;</span><span class="popup-onmap__information-text">технические жидкости;</span><span class="popup-onmap__information-text">автохимия;</span><span class="popup-onmap__information-text">автоаксессуары;</span><span class="popup-onmap__information-text">детские автокресла;</span><span class="popup-onmap__information-text">ключи, наборы инструментов;</span><span class="popup-onmap__information-text">колесные колпаки.</span></div>
+          <div class="popup-onmap__information-item"><span class="popup-onmap__information-title">Услуги:</span><span class="popup-onmap__information-text">шиномонтаж легкового и грузового авто;</span><span class="popup-onmap__information-text">балансировка колес;</span><span class="popup-onmap__information-text">ремонт шины;</span><span class="popup-onmap__information-text">развал-схождение (регулировка углов установки колёс);</span><span class="popup-onmap__information-text">замена масла, фильтров;</span><span class="popup-onmap__information-text">замена и проверка охлаждающей жидкости, замена системы охлаждения;</span><span class="popup-onmap__information-text">заправка и дезинфекция кондиционеров;</span><span class="popup-onmap__information-text">замена и диагностика аккумулятора;</span><span class="popup-onmap__information-text">компьютерная диагностика автомобиля;</span><span class="popup-onmap__information-text">ремонт электрооборудования;</span><span class="popup-onmap__information-text">диагностика и ремонт подвески;</span><span class="popup-onmap__information-text">замена выхлопной системы;</span><span class="popup-onmap__information-text">ремонт и замена тормозной системы;</span><span class="popup-onmap__information-text">замена клиновых и ручейковых ремней;</span><span class="popup-onmap__information-text">чистка ЕГР;</span><span class="popup-onmap__information-text">сезонное хранение шин;</span></div>
+        </div>
+      </div>
+      <script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb2OuKaE3NLGJyzXymywkKFfWv-7Enx9E&amp;callback=initMapPopup"></script>
     </div>
   </div><!-- inject:js -->
 <!-- endinject -->
