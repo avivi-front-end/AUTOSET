@@ -292,6 +292,16 @@ $(function() {
         }
     })
 
+    $('.js-tiresTabFilter').on('click', function() {
+        if(!$(this).hasClass('active')) {
+            var ind = $(this).index() - 1;
+            $('.js-tiresTabFilter').removeClass('active');
+            $('.js-tiresTabBlock').removeClass('active');
+            $(this).addClass('active');
+            $('.js-tiresTabBlock').eq(ind).addClass('active');
+        }
+    })
+
 });
 
 

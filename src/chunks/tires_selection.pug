@@ -1,3 +1,161 @@
+.tiresFiler
+    .container
+        .tiresFiler__tabs
+            a(href="#").tiresFiler__tab
+                span
+                    +icon('ico-contacts-phone')
+                |Бесплатная консультация
+            a(href="#").tiresFiler__tab.js-tiresTabFilter.active Подбор по параметрам
+            a(href="#").tiresFiler__tab.js-tiresTabFilter Подбор по марке авто
+    .tiresFiler__filter
+        .container.wrap.wrapMdOFF
+            .tiresFiler__filterWrap
+                .tiresFiler__filterBlock.js-tiresTabBlock.active
+                    .tiresFiler__filterImg
+                        img(src="./img/img-tires-filterImg.png", alt="#")
+                    .tiresFiler__filterMenu
+                        span.tiresFiler__filterHelp 
+                            |Помощь
+                            span
+                                +icon('question')
+                        .tiresFiler__leftMenu
+                            .tiresFiler__filterThree
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Ширина
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") 225
+                                            option(value="2") 322
+                                            option(value="3") 234
+                                            option(value="5") 234
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Профиль
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") 45
+                                            option(value="2") 54
+                                            option(value="3") 23
+                                            option(value="5") 123
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Диаметр 
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") R17
+                                            option(value="2") R18
+                                            option(value="3") R16
+                                            option(value="5") R19
+                            .tiresFiler__filterOne
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Производитель
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Все производители
+                                            option(value="2") Все производители
+                                            option(value="3") Все производители
+                                            option(value="5") Все производители
+                            .tiresFiler__filterCapacity
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Цена от
+                                    input(type="text" placeholder="10").tiresFiler__filterTextField
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Цена до
+                                    input(type="text" placeholder="200").tiresFiler__filterTextField
+                        .tiresFiler__rightMenu
+                            .tiresFiler__filterOne
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Сезон
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Летние/всесезонные
+                                            option(value="2") Летние
+                                            option(value="3") Всесезонные
+                            .tiresFiler__filterTwo
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Индекс скорости
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Любой
+                                            option(value="2") 1
+                                            option(value="3") 2
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Индекс нагрузки
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Любой
+                                            option(value="2") 1
+                                            option(value="3") 2
+                            button(type="button").tiresFiler__filterBtn Подобрать
+                            .tiresFiler__hideBtnWrap
+                                button(type="button").tiresFiler__hideBtn.active
+                                    |Упрощённый поиск
+                                    span
+                                        +icon('ico-arrow-select')
+                .tiresFiler__filterBlock.js-tiresTabBlock
+                    .tiresFiler__filterImg
+                        img(src="./img/img-tires-filterImg.png", alt="#")
+                    .tiresFiler__filterMenu
+                        span.tiresFiler__filterHelp 
+                            |Помощь
+                            span
+                                +icon('question')
+                        .tiresFiler__leftMenu
+                            .tiresFiler__filterThree
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Ширина
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") 225
+                                            option(value="2") 322
+                                            option(value="3") 234
+                                            option(value="5") 234
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Профиль
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") 45
+                                            option(value="2") 54
+                                            option(value="3") 23
+                                            option(value="5") 123
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Диаметр 
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") R17
+                                            option(value="2") R18
+                                            option(value="3") R16
+                                            option(value="5") R19
+                            .tiresFiler__filterOne
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Производитель
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Все производители
+                                            option(value="2") Все производители
+                                            option(value="3") Все производители
+                                            option(value="5") Все производители
+                            .tiresFiler__filterCapacity
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Цена от
+                                    input(type="text" placeholder="10").tiresFiler__filterTextField
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Цена до
+                                    input(type="text" placeholder="200").tiresFiler__filterTextField
+                        .tiresFiler__rightMenu
+                            .tiresFiler__filterOne
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Сезон
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Летние/всесезонные
+                                            option(value="2") Летние
+                                            option(value="3") Всесезонные
+                            .tiresFiler__filterTwo
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Индекс скорости
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Любой
+                                            option(value="2") 1
+                                            option(value="3") 2
+                                .tiresFiler__filterSelect
+                                    span.tiresFiler__filterLabel Индекс нагрузки
+                                    select(name="" id="")
+                                            option(value="1" selected="selected") Любой
+                                            option(value="2") 1
+                                            option(value="3") 2
+                            button(type="button").tiresFiler__filterBtn Подобрать
+                            .tiresFiler__hideBtnWrap
+                                button(type="button").tiresFiler__hideBtn 
+                                    |Упрощённый поиск
+                                    span
+                                        +icon('ico-arrow-select')
 .tiresList
     .container
         .tiresList__filter
@@ -19,7 +177,7 @@
                             .tiresList__infoItem 225/45 R17
                             .tiresList__infoItem.tiresList__infoItem--border 94 W
                             .tiresList__infoItem.tiresList__infoItem--border
-                                | Класс
+                                | Класс 
                                 span C+
                             .tiresList__infoItem.tiresList__infoItem--border Евроэтикетка
                         .tiresList__aboutBlock
@@ -91,7 +249,7 @@
                             .tiresList__infoItem 225/45 R17
                             .tiresList__infoItem.tiresList__infoItem--border 94 W
                             .tiresList__infoItem.tiresList__infoItem--border
-                                | Класс
+                                | Класс 
                                 span C+
                             .tiresList__infoItem.tiresList__infoItem--border Евроэтикетка
                         .tiresList__aboutBlock
@@ -163,7 +321,7 @@
                             .tiresList__infoItem 225/45 R17
                             .tiresList__infoItem.tiresList__infoItem--border 94 W
                             .tiresList__infoItem.tiresList__infoItem--border
-                                | Класс
+                                | Класс 
                                 span C+
                             .tiresList__infoItem.tiresList__infoItem--border Евроэтикетка
                         .tiresList__aboutBlock
@@ -226,7 +384,7 @@
                                         option(value="3") 2
                                         option(value="5") 8
                             button(type="button").tiresList__buyButton КУПИТЬ
-                .tiresList__banner(style="background-image: url('../img/img-tires-bannerBg.jpg');")
+                .tiresList__banner(style="background-image: url('./img/img-tires-bannerBg.jpg');")
                     .tiresList__bannerText
                         .tiresList__bannerTextTop ШИНОМОНТАЖ В ПОДАРОК
                         .tiresList__bannerTextBottom при покупке 4 шин MAXXIS диаметром от 17” 

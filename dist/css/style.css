@@ -10406,6 +10406,346 @@ a.ui-button:active,
   font-size: 14px;
 }
 
+@media (max-width: 959px) {
+  .wrapMdOFF {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.tiresFiler {
+  font-family: "roboto", sans-serif;
+}
+
+.tiresFiler__tabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.tiresFiler__tab {
+  width: 33.33%;
+  background: #e2001a;
+  transition: background-color 0.3s;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 55px;
+}
+
+@media (max-width: 959px) {
+  .tiresFiler__tab {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tiresFiler__tab {
+    width: 50%;
+  }
+  .tiresFiler__tab:first-child {
+    display: none;
+  }
+}
+
+.tiresFiler__tab:hover {
+  background-color: #ff2c2c;
+}
+
+.tiresFiler__tab.active {
+  background: #dddddd;
+  color: #000;
+}
+
+.tiresFiler__tab.active:hover {
+  background-color: #dddddd;
+}
+
+.tiresFiler__tab svg {
+  height: 33px;
+  width: 33px;
+  fill: #fff;
+  margin-right: 10px;
+}
+
+.tiresFiler__filter {
+  background: #dddddd;
+  padding-top: 43px;
+}
+
+.tiresFiler__filterBlock {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: none;
+}
+
+.tiresFiler__filterBlock.active {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .tiresFiler__filterBlock {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.tiresFiler__filterImg {
+  width: 290px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 959px) {
+  .tiresFiler__filterImg {
+    display: none;
+  }
+}
+
+.tiresFiler__filterMenu {
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .tiresFiler__filterMenu {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.tiresFiler__filterHelp {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  color: #4c4c4c;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tiresFiler__filterHelp svg {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+}
+
+.tiresFiler__leftMenu {
+  width: 320px;
+}
+
+@media (max-width: 999px) {
+  .tiresFiler__leftMenu {
+    width: 294px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tiresFiler__leftMenu {
+    width: 280px;
+    margin-right: 0;
+  }
+}
+
+.tiresFiler__rightMenu {
+  width: 280px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .tiresFiler__rightMenu {
+    width: 280px;
+  }
+}
+
+.tiresFiler__filterThree {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tiresFiler__filterThree .tiresFiler__filterSelect {
+  width: 95px;
+}
+
+@media (max-width: 767px) {
+  .tiresFiler__filterThree .tiresFiler__filterSelect {
+    width: 90px;
+  }
+}
+
+.tiresFiler__filterSelect .jq-selectbox__select {
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 1px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 35px;
+}
+
+.tiresFiler__filterSelect .jq-selectbox__dropdown {
+  width: 100% !important;
+}
+
+.tiresFiler__filterSelect .jq-selectbox__dropdown li {
+  font-size: 25px;
+  font-weight: 600;
+  width: 100% !important;
+}
+
+.tiresFiler__filterSelect .jq-selectbox {
+  width: 100%;
+}
+
+.tiresFiler__filterSelect .jq-selectbox__select-text {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tiresFiler__filterLabel {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.tiresFiler__filterOne {
+  margin-bottom: 15px;
+}
+
+.tiresFiler__filterTwo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.tiresFiler__filterTwo .tiresFiler__filterSelect {
+  width: 47%;
+}
+
+.tiresFiler__filterCapacity {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.tiresFiler__filterCapacity .tiresFiler__filterSelect {
+  width: 95px;
+  margin-right: 19px;
+}
+
+.tiresFiler__filterTextField {
+  width: 100%;
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 1px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  height: 35px;
+}
+
+.tiresFiler__filterTextField::-webkit-input-placeholder {
+  color: #000;
+}
+
+.tiresFiler__filterTextField::-moz-placeholder {
+  color: #000;
+}
+
+.tiresFiler__filterBtn {
+  background: #e2001a;
+  transition: background-color 0.3s;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
+}
+
+.tiresFiler__filterBtn:hover {
+  background-color: #ff2c2c;
+}
+
+.tiresFiler__hideBtnWrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.tiresFiler__hideBtn {
+  color: #666666;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #666666;
+  width: 200px;
+  height: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tiresFiler__hideBtn svg {
+  width: 15px;
+  height: 9px;
+  fill: #666666;
+}
+
+.tiresFiler__hideBtn span {
+  margin: 0 10px;
+}
+
+.tiresFiler__hideBtn.active span {
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .tiresList {
   background: #b2b2b2;
   font-family: "roboto", sans-serif;
@@ -10424,9 +10764,24 @@ a.ui-button:active,
   margin-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+  .tiresList__filter {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 .tiresList__results {
   font-size: 22px;
   letter-spacing: +0.2px;
+}
+
+@media (max-width: 767px) {
+  .tiresList__results {
+    margin-bottom: 15px;
+  }
 }
 
 .tiresList__results span {
@@ -10438,6 +10793,15 @@ a.ui-button:active,
   display: flex;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+@media (max-width: 543px) {
+  .tiresList__btns {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
 .tiresList__btn {
@@ -10458,8 +10822,20 @@ a.ui-button:active,
   cursor: pointer;
 }
 
+@media (max-width: 543px) {
+  .tiresList__btn:first-child {
+    margin-bottom: 10px;
+  }
+}
+
 .tiresList__btn:not(:last-child) {
   margin-right: 10px;
+}
+
+@media (max-width: 543px) {
+  .tiresList__btn:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .tiresList__btn:hover {
@@ -10496,8 +10872,24 @@ a.ui-button:active,
   justify-content: space-between;
 }
 
+@media (max-width: 959px) {
+  .tiresList__itemWrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 .tiresList__itemLeft {
   width: 560px;
+}
+
+@media (max-width: 959px) {
+  .tiresList__itemLeft {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .tiresList__name {
@@ -10520,10 +10912,23 @@ a.ui-button:active,
   margin-bottom: 15px;
 }
 
+@media (max-width: 543px) {
+  .tiresList__modelInfo {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .tiresList__infoItem {
   padding: 4px 0;
   font-size: 22px;
   line-height: 1;
+}
+
+@media (max-width: 543px) {
+  .tiresList__infoItem {
+    margin-bottom: 10px;
+  }
 }
 
 .tiresList__infoItem--border {
@@ -10547,10 +10952,24 @@ a.ui-button:active,
   justify-content: space-between;
 }
 
+@media (max-width: 543px) {
+  .tiresList__aboutBlock {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .tiresList__imgBlock {
   position: relative;
   width: 300px;
   height: 190px;
+}
+
+@media (max-width: 543px) {
+  .tiresList__imgBlock {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .tiresList__imgBlock > img {
@@ -10683,6 +11102,19 @@ a.ui-button:active,
 
 .tiresList__itemRight {
   width: 280px;
+}
+
+@media (max-width: 959px) {
+  .tiresList__itemRight {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tiresList__itemRight {
+    width: 280px;
+  }
 }
 
 .tiresList__options {
@@ -10910,8 +11342,23 @@ a.ui-button:active,
   padding-top: 5px;
 }
 
+@media (max-width: 959px) {
+  .tiresList__banner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
 .tiresList__bannerText {
   padding: 10px;
+}
+
+@media (max-width: 959px) {
+  .tiresList__bannerText {
+    margin-bottom: 10px;
+  }
 }
 
 .tiresList__bannerTextTop {
@@ -10946,6 +11393,13 @@ a.ui-button:active,
   border-radius: 3px;
   font-size: 14px;
   font-weight: bold;
+}
+
+@media (max-width: 543px) {
+  .tiresList__bannerBtn {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .tiresList__bannerBtn:before {

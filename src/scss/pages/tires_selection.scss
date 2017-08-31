@@ -1,3 +1,261 @@
+.wrapMdOFF {
+    @media(max-width: $screen-md-max) {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+.tiresFiler {
+    font-family: "roboto", sans-serif;
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tab {
+        width: 33.33%;
+        background: #e2001a;
+        transition: background-color 0.3s;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+
+        @media (max-width: $screen-md-max) {
+            padding: 0 10px;
+        }
+        @media (max-width: $screen-sm-max) {
+            width: 50%;
+            &:first-child {
+                display: none;
+            }
+        }
+        &:hover {
+            background-color: #ff2c2c;
+        }
+        &.active {
+            background: #dddddd;
+            color: #000;
+
+            &:hover {
+                background-color: #dddddd;
+            }
+        }
+        & svg {
+            height: 33px;
+            width: 33px;
+            fill: #fff;
+            margin-right: 10px;
+        }
+    }
+    &__filter {
+        background: #dddddd;
+        padding-top: 43px;
+    }
+    &__filterBlock {
+        justify-content: space-between;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            flex-wrap: wrap;
+        }
+    }
+    &__filterImg {
+        width: 290px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 10px;
+        margin-right: 10px;
+
+        @media (max-width: $screen-md-max) {
+            display: none;
+        }
+    }
+    &__filterMenu {
+        flex: 1;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $screen-sm-max) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__filterHelp {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        color: #4c4c4c;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        & svg {
+            width: 28px;
+            height: 28px;
+            margin-left: 10px;
+        }
+    }
+    &__leftMenu {
+        width: 320px;
+
+        @media (max-width: $screen-lg-max) {
+            width: 294px;
+            margin-right: 10px;
+        }
+        @media (max-width: $screen-sm-max)  {
+            width: 280px;
+            margin-right: 0;
+        }
+    }
+    &__rightMenu {
+        width: 280px;
+        padding-bottom: 10px;
+
+        @media (max-width: $screen-sm-max)  {
+            width: 280px;
+        }
+    }
+    &__filterThree {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        & .tiresFiler__filterSelect {
+            width: 95px;
+
+            @media (max-width: $screen-sm-max)  {
+                width: 90px;
+            }
+        }
+    }
+    &__filterSelect {
+        
+
+        & .jq-selectbox__select {
+            width: 100%;
+            border: 1px solid #cccccc;
+            padding: 1px 10px;
+            font-size: 18px;
+            font-weight: 600;
+            height: 35px;
+        }
+        & .jq-selectbox__dropdown {
+            width: 100% !important;
+        }
+        & .jq-selectbox__dropdown li {
+            font-size: 25px;
+            font-weight: 600;
+            width: 100% !important;
+        }
+        & .jq-selectbox {
+            width: 100%;
+        }
+        & .jq-selectbox__select-text {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__filterLabel {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    &__filterOne {
+        margin-bottom: 15px;
+    }
+    &__filterTwo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 18px;
+
+        & .tiresFiler__filterSelect {
+            width: 47%;
+        }
+    }
+    &__filterCapacity {
+        display: flex;
+        justify-content: flex-start;
+        
+        & .tiresFiler__filterSelect {
+            width: 95px;
+            margin-right: 19px;
+        }
+    }
+    &__filterTextField {
+        width: 100%;
+        width: 100%;
+        border: 1px solid #cccccc;
+        padding: 1px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 4px;
+        height: 35px;
+
+        &::-webkit-input-placeholder{color: #000;}
+        &::-moz-placeholder {color: #000;}
+    }
+    &__filterBtn {
+        background: #e2001a;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 54px;
+        border: none;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: #ff2c2c;
+        }
+    }
+    &__hideBtnWrap {
+        display: flex;
+        justify-content: center;
+    }
+    &__hideBtn {
+        color: #666666;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #666666;
+        width: 200px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        cursor: pointer;
+
+        & svg {
+            width: 15px;
+            height: 9px;
+            fill:#666666;
+        }
+        & span {
+            margin: 0 10px;
+        }
+        &.active {
+            span {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
 .tiresList {
     background: #b2b2b2;
     font-family: "roboto", sans-serif;
@@ -10,11 +268,18 @@
         align-items: center;
         padding: 14px 18px;
         margin-bottom: 20px;
+
+        @media (max-width: $screen-sm-max)  {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__results {
         font-size: 22px;
         letter-spacing: +0.2px;
-
+        @media (max-width: $screen-sm-max)  {
+            margin-bottom: 15px;
+        }
         & span {
             font-weight: 600;
         }
@@ -22,6 +287,11 @@
     &__btns {
         display: flex;
         justify-content: flex-start;
+
+        @media (max-width: $screen-xs-max)  {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__btn {
         width: 150px;
@@ -37,8 +307,18 @@
         border-radius: 4px;
         cursor: pointer;
 
+        @media (max-width: $screen-xs-max) {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
         &:not(:last-child) {
             margin-right: 10px;
+
+            @media (max-width: $screen-xs-max) {
+                margin-right: 0;
+            }
         }
         &:hover {
             background-color: #ff2c2c;
@@ -67,9 +347,19 @@
     &__itemWrap {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $screen-md-max) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__itemLeft {
         width: 560px;
+
+        @media (max-width: $screen-md-max) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
     &__name {
         font-size: 32px;
@@ -85,12 +375,19 @@
         display: flex;
         justify-content: flex-start;
         margin-bottom: 15px;
+
+        @media (max-width: $screen-xs-max) {
+            flex-wrap: wrap;
+        }
     }
     &__infoItem {
         padding: 4px 0;
         font-size: 22px;
         line-height: 1;
 
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 10px;
+        }
         &--border {
             border: 1px solid #cccccc;
             border-radius: 3px;
@@ -106,11 +403,20 @@
     &__aboutBlock {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $screen-xs-max) {
+            flex-wrap: wrap;
+        }
     }
     &__imgBlock {
         position: relative;
         width: 300px;
         height: 190px;
+
+        @media (max-width: $screen-xs-max) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
         &>img {
             object-fit: contain;
             height: 100%;
@@ -199,7 +505,6 @@
         display: flex;
         align-items: flex-end;
         font-size: 14px;
-
         & ul {
             list-style: none;
             display: block;
@@ -225,6 +530,14 @@
     }
     &__itemRight {
         width: 280px;
+
+        @media (max-width: $screen-md-max) {
+            width: 50%;
+            padding-bottom: 20px;
+        }
+        @media (max-width: $screen-sm-max)  {
+            width: 280px;
+        }
     }
     &__options {
         display: flex;
@@ -409,9 +722,18 @@
         justify-content: space-between;
         overflow: hidden;
         padding-top: 5px;
+
+        @media (max-width: $screen-md-max) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     }
     &__bannerText {
         padding: 10px;
+
+        @media (max-width: $screen-md-max) {
+            margin-bottom: 10px;
+        }
     }
     &__bannerTextTop {
         text-transform: uppercase;
@@ -442,6 +764,10 @@
         font-size: 14px;
         font-weight: bold;
 
+        @media (max-width: $screen-xs-max) {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }   
         &:before {
             content: '';
             position: absolute;
