@@ -783,6 +783,10 @@
 
 .ui-datepicker-week-end {
   color: #e2001a!important;
+
+  a {
+    color: #e2001a!important;
+  }
 }
 .ui-datepicker-month {
   text-transform: lowercase;

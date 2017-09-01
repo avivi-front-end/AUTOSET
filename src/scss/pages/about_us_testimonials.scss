@@ -220,6 +220,10 @@
     font-size: 22px;
     color: #000;
     font-weight: 700;
+
+    @media (max-width: $screen-xs-max) {
+      margin: 0 0 16px 0;
+    }
   }
 
   &__item {

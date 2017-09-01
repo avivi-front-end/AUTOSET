@@ -6,6 +6,37 @@
   background: url("../img/img-media-bg-top.jpg") no-repeat center;
   background-size: cover;
 
+  &__bg-img {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 350px;
+      top: 0;
+      height: 232px;
+      width: 379px;
+      background: url("../img/img-media-bg-top-dop.png") no-repeat center;
+      background-size: 100% 100%;
+      z-index: 1;
+
+      @media (max-width: 1400px) {
+        height: 100%;
+        right: 200px;
+      }
+
+      @media (max-width: $screen-md-max) {
+        height: 100%;
+        right: 10px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        height: 100%;
+        right: -130px;
+      }
+    }
+  }
+
   &__title {
     display: flex;
     margin-bottom: 31px;
@@ -14,6 +45,9 @@
     font-weight: 700;
     line-height: 58px;
     color: #fff;
+    position: relative;
+    z-index: 2;
+
     @media (max-width: $screen-md-max) {
       font-size: 40px;
     }
@@ -28,7 +62,7 @@
 
   &__option-wrapper {
     display: flex;
-    margin-left: 45px
+    margin-left: 22px;
   }
 
   &__option {
@@ -61,6 +95,8 @@
   }
 
   &__wrapper {
+    position: relative;
+    z-index: 2;
     padding: 17px 20px 31px;
     border-left: 1px solid #fff;
   }

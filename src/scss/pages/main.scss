@@ -170,6 +170,19 @@ label.error {
   }
 }
 
+
+button[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .index {
   padding: 40px 0;
   display: flex;
@@ -602,12 +615,13 @@ label.error {
   font-family: "roboto", sans-serif;
   text-align: left;
   display: inline-block;
-  width: 312px;
+  //width: 312px;
   color: #000;
   background-color: #fff;
   font-size: 16px;
   font-weight: 500;
   padding: 5px 14px;
+  width: 100%;
 }
 .jq-selectbox li.selected {
 

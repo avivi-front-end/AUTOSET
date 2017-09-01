@@ -185,6 +185,12 @@
         margin-bottom: 10px;
       }
 
+      &--nomargin {
+        @media (max-width: $screen-xs-max) {
+          margin-bottom: 0!important;
+        }
+      }
+
       svg {
         position: absolute;
         width: 100%;

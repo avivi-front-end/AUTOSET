@@ -277,6 +277,16 @@
     flex-direction: column;
     align-items: center;
 
+    &:hover {
+      svg {
+        fill: #ff2c2c;
+      }
+
+      span {
+        color: #666666;
+      }
+    }
+
     @media (max-width: $screen-sm-max) {
       width: 50%;
       margin-bottom: 25px;
@@ -330,6 +340,8 @@
       left: 0;
       top: 0;
       fill: #e2001a;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
     }
   }
 
@@ -345,6 +357,8 @@
     font-weight: 700;
     margin-bottom: 2px;
     color: #000000;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 
     @media (max-width: $screen-sm-max) {
       font-size: 16px;
@@ -356,6 +370,8 @@
     font-size: 16px;
     font-weight: 400;
     color: #000000;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   &__spec {
