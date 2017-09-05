@@ -1,6 +1,7 @@
 // about_us_team.css
 
 .team {
+  overflow: hidden;
   margin-bottom: 65px;
   padding: 37px 0 17px;
   background: url("../img/img-team-bg-top.jpg") no-repeat center;
@@ -77,6 +78,14 @@
     z-index: 2;
     padding: 17px 20px 16px;
     border-left: 1px solid #fff;
+
+    @media (max-width: $screen-md-max) {
+      margin-left: 18px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 0;
+    }
   }
 
   &__text {
@@ -247,7 +256,7 @@
         right: -28px;
         top: 15px;
         height: 71px;
-        width: 2px;
+        width: 1px;
         background-color: #cccccc;
 
         @media (max-width: $screen-sm-max) {
@@ -402,7 +411,7 @@
     }
 
     @media (max-width: $screen-xs-max) {
-      width: 100%;
+      width: 140px;
     }
 
     img {

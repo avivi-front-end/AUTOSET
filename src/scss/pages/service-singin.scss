@@ -127,6 +127,10 @@
     z-index: 2;
     position: relative;
 
+    .disabled {
+      display: none;
+    }
+
     &--select {
       z-index: 3;
     }

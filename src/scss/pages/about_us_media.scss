@@ -1,6 +1,7 @@
 // about_us_media.css
 
 .media-company {
+  overflow: hidden;
   margin-bottom: 33px;
   padding: 26px 0;
   background: url("../img/img-media-bg-top.jpg") no-repeat center;
@@ -63,6 +64,14 @@
   &__option-wrapper {
     display: flex;
     margin-left: 22px;
+
+    @media (max-width: $screen-md-max) {
+      margin-top: 7px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 12px;
+    }
   }
 
   &__option {
@@ -255,6 +264,10 @@
       font-weight: 400;
       color: #4c4c4c;
       text-align: justify;
+
+      @media (max-width: $screen-xs-max) {
+        text-align: left;
+      }
     }
   }
   &__exhibition {

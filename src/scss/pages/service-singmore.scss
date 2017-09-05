@@ -127,6 +127,10 @@
     z-index: 2;
     position: relative;
 
+    .disabled {
+      display: none;
+    }
+
     &--select {
       z-index: 3;
     }
@@ -261,6 +265,14 @@
   background-color: #fafafa;
   padding: 26px 0 46px;
 
+  &__container {
+
+    @media (max-width: $screen-md-max) {
+      max-width: 100%;
+      padding: 0 15px!important;
+    }
+  }
+
 
   &__wrapper {
     display: flex;
@@ -272,6 +284,13 @@
     box-shadow: 0 0 14px 5px #eaeaea;
 
     @media (max-width: $screen-md-max) {
+      flex-wrap: wrap;
+      padding: 30px 30px 35px 30px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    @media (max-width: $screen-sm-max) {
       flex-wrap: wrap;
       padding: 30px 35px 35px 35px;
       align-items: center;
@@ -294,6 +313,14 @@
         margin-bottom: 30px;
       }
 
+      @media (max-width: 880px) {
+        width: 355px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        width: 385px;
+      }
+
       @media (max-width: $screen-xs-max) {
         width: 100%;
       }
@@ -301,6 +328,14 @@
 
     &--times {
       width: 390px;
+
+      @media (max-width: 880px) {
+        width: 310px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        width: 390px;
+      }
 
       @media (max-width: $screen-xs-max) {
         width: 100%;
@@ -423,11 +458,19 @@
     color: #b2b2b2;
     padding: 6px 0 5px;
     background-color: #eeeeee;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-bottom: 8px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     pointer-events: none;
+
+    @media (max-width: 880px) {
+      width: 71px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      width: 90px;
+    }
 
     @media (max-width: $screen-xs-max) {
       width: 22%;
@@ -963,6 +1006,14 @@
 .ui-datepicker td {
   border: 0;
   padding: 4px 8px;
+
+  @media (max-width: 880px) {
+    padding: 4px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 4px 8px;
+  }
 
   @media (max-width: $screen-xs-max) {
     padding: 4px 3px;

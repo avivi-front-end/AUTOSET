@@ -1,14 +1,48 @@
 // helper.css
 
 .helper {
+  overflow: hidden;
   padding: 0 0 18px;
   background: url("../img/img-helper-bg-top.jpg") no-repeat center;
   background-size: cover;
+
+  &__bg-img {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 40px;
+      top: 0;
+      height: 244px;
+      width: 514px;
+      background: url("../img/img-helper-bg-top-dop.png") no-repeat center;
+      background-size: 100% 100%;
+      z-index: 1;
+
+      @media (max-width: 1400px) {
+        height: 100%;
+        right: 20px;
+      }
+
+      @media (max-width: $screen-md-max) {
+        height: 100%;
+        right: 40px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        height: 100%;
+        right: -130px;
+      }
+    }
+  }
+
   @media (max-width: $screen-sm-max) {
     padding: 0 0 15px;
   }
 
   &__title {
+    position: relative;
     display: block;
     margin-bottom: 21px;
     font-family: "roboto", sans-serif;
@@ -21,6 +55,7 @@
     text-align: center;
     padding: 23px 0;
     background-color: #e2001a;
+    z-index: 2;
     @media (max-width: $screen-sm-max) {
       font-size: 38px;
       padding:  20px;
@@ -36,11 +71,13 @@
   }
 
   &__wrapper {
+    position: relative;
     padding: 17px 20px 18px;
     border-left: 1px solid #fff;
     margin-left: 71px;
+    z-index: 2;
 
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-md-max) {
       margin-left: 0;
     }
   }
@@ -56,6 +93,18 @@
     text-align: left;
     &--bold {
       font-weight: 700;
+    }
+  }
+
+  &__container-md {
+
+    @media (max-width: $screen-md-max) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      max-width: 576px;
+      padding: 0;
     }
   }
 
@@ -97,6 +146,10 @@
 
         @media (max-width: $screen-sm-max) {
           padding: 20px 15px 0 15px;
+        }
+
+        @media (max-width: 360px) {
+          padding: 20px 3px 0 3px;
         }
       }
     }
@@ -217,7 +270,7 @@
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
 
-      @media (max-width: $screen-sm-max) {
+      @media (max-width: $screen-md-max) {
         font-size: 18px;
       }
 
@@ -233,6 +286,10 @@
 
     &--inside {
       margin-bottom: 46px!important;
+
+      @media (max-width: $screen-md-max) {
+        margin-bottom: 20px!important;
+      }
     }
 
     &:not(:last-child) {
@@ -316,7 +373,7 @@
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
 
-      @media (max-width: $screen-sm-max) {
+      @media (max-width: $screen-md-max) {
         font-size: 14px;
       }
     }
@@ -329,11 +386,6 @@
       width: 100%;
       text-align: center;
       margin-bottom: 32px;
-
-      @media (max-width: $screen-sm-max) {
-        font-size: 18px;
-        line-height: 1em;
-      }
     }
 
     &__img {

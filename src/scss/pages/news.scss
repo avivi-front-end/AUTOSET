@@ -17,13 +17,8 @@
     background-color: rgba(230, 230, 230, 1);
     padding: 30px 0 46px;
 
-    @media (max-width: $screen-md-max) {
-
-    }
-
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: 670px) {
       width: 100%;
-      justify-content: flex-start;
     }
 
     @media (max-width: $screen-xs-max) {
@@ -115,10 +110,6 @@
     margin-bottom: 18px;
 
     @media (max-width: $screen-md-max) {
-      font-size: 30px;
-    }
-
-    @media (max-width: $screen-xs-max) {
       font-size: 24px;
       line-height: 1em;
     }
@@ -280,17 +271,21 @@
       line-height: 1em;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
+
+      br {
+        @media (max-width: $screen-sm-max) {
+          display: none;
+        }
+      }
     }
 
     &__news-wrap {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      display: block;
     }
 
     &__img-wrap {
       width: 100%;
+      height: auto;
       padding-top: 2px;
       margin-bottom: 11px;
 
@@ -507,14 +502,10 @@
     }
 
     &:hover {
-      .news__special-top {
-        &:before {
-          border-width: 20px 0 20px 12.5px;
-        }
 
-        &:after {
-          border-width: 16px 0 16px 10px;
-        }
+      .news__special-top {
+
+        background-color: #FFED6B;
 
         span {
           color: #4c4c4c;
@@ -528,6 +519,8 @@
     min-height: 65px;
     background-color: #ffc100;
     padding: 14px 25px 14px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 
     @media (max-width: $screen-md-max) {
       width: calc(100% - 440px);
@@ -540,8 +533,6 @@
     &:before {
       content: '';
       position: absolute;
-      -webkit-transition: all 0.1s ease;
-      transition: all 0.1s ease;
       left: 0;
       top: 50%;
       transform: translate(0, -50%);
@@ -585,6 +576,12 @@
       line-height: 1em;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
+
+      br {
+        @media (max-width: $screen-sm-max) {
+          display: none;
+        }
+      }
     }
   }
 
@@ -625,6 +622,14 @@
     display: flex;
     flex-direction: column;
     width: calc(100% - 200px);
+
+    @media (max-width: 999px) {
+      width: calc(100% - 147px);
+    }
+
+    @media (max-width: 960px) {
+      width: calc(100% - 200px);
+    }
 
     @media (max-width: $screen-xs-max) {
       width: 100%;
