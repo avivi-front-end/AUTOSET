@@ -366,10 +366,14 @@
         font-weight: bold;
         margin-bottom: 4px;
         line-height: 1;
+        display: block;
+        color: #000;
     }
     &__model {
         font-size: 28px;
         margin-bottom: 9px;
+        display: block;
+        color: #000;
     }
     &__modelInfo {
         display: flex;
@@ -384,6 +388,7 @@
         padding: 4px 0;
         font-size: 22px;
         line-height: 1;
+        color: #000;
 
         @media (max-width: $screen-xs-max) {
             margin-bottom: 10px;
@@ -682,7 +687,7 @@
             text-align: center;
         }
         & .jq-selectbox__dropdown li {
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 600;
             text-align: center;
             width: 100% !important;
