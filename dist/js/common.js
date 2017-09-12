@@ -355,6 +355,23 @@ $(function() {
         closePopup();
     });
 
+    $( ".js-hint" ).hover(
+        function() {
+            $( this ).children(".hint-block").show();
+        }, function() {
+            $( this ).children(".hint-block").hide();
+        }
+    );
+
+    $( ".js-hint-block-width" ).hover(
+        function() {
+            $('.js-hint-width').css('width',$('.container').width());
+        }, function() {
+        }
+    );
+
+
+
 
 });
 
