@@ -370,6 +370,12 @@ $(function() {
         }
     );
 
+    $( ".js-hint-block-width2" ).hover(
+        function() {
+            $('.js-hint-width').css('width',$('.container').width() - 30);
+        }, function() {
+        }
+    );
 
 
 
