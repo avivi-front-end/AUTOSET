@@ -684,6 +684,22 @@
 
         .hint-block {
             left: -125px;
+
+            @media (max-width: $screen-md-max) {
+                left: 0;
+                transform: translate3d(0,0,0);
+            }
+            @media (max-width: 360px) {
+                min-width: 200px;
+            }
+        }
+
+        .hint-block--price2 {
+            @media (max-width: $screen-md-max) {
+                left: auto;
+                right: 0;
+                transform: translate3d(0,0,0);
+            }
         }
     }
     &__newPriceLabel {
@@ -857,5 +873,33 @@
             left: -61px;
             top: 0px;
         }
+    }
+}
+
+.tiresList__infoItem--border .hint-block--class__block {
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 360px) {
+        padding: 9px 3px 13px;
+    }
+}
+.hint-block--class__item:before {
+    @media (max-width: $screen-sm-max) {
+        width: 500px;
+    }
+}
+.tiresList__infoItem .hint-block--class__block2 {
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 5px;
+    }
+}
+.tiresList__infoItem--border .hint-block--class {
+    @media (max-width: 360px) {
+        min-width: auto;
+        padding: 20px 5px;
     }
 }

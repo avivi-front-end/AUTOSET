@@ -823,6 +823,7 @@ b, strong {
   transform: translate3d(-50%,0, 1px);
   padding: 15px;
 
+
   a {
     font-family: "roboto", sans-serif;
     font-weight: 400;
@@ -854,13 +855,43 @@ b, strong {
     bottom: -15px;
     top: auto;
 
+    @media (max-width: $screen-sm-max) {
+      transform: translate3d(0,0,0);
+      left: 0;
+    }
+
+    @media (max-width: 360px) {
+      min-width: 200px;
+    }
+
     .hint-small-text {
       line-height: 17px;
     }
   }
 
+  &--price2 {
+    @media (max-width: 1250px) {
+      transform: translate3d(0,0,0);
+      left: auto;
+      right: 0;
+    }
+  }
+
   &--installment {
     min-width: 250px;
+
+    @media (max-width: 1200px) {
+      transform: translate3d(0,0,0);
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &--free {
+    @media (max-width: $screen-sm-max) {
+      transform: translate3d(0,0,0);
+      left: 0;
+    }
   }
 
   &--weather {
@@ -874,8 +905,13 @@ b, strong {
   &--perf {
     left: 0;
     top: 43px;
-    min-width: 225px;
+    min-width: 224px;
     transform: translate3d(0,0,0);
+
+    @media (max-width: $screen-xs-max) {
+      left: 47%;
+      transform: translate3d(-50%,0, 1px);
+    }
 
     p {
       font-size: 12px;
@@ -888,6 +924,17 @@ b, strong {
     top: 10px;
     text-align: center;
     min-width: 326px;
+
+    @media (max-width: $screen-sm-max) {
+      transform: translate3d(0,0,0);
+      left: auto;
+      right: 0;
+    }
+
+    @media (max-width: 360px) {
+      min-width: 297px;
+      padding: 27px 10px;
+    }
 
     &__block {
       border: 1px solid #e5e5e5;
@@ -1194,6 +1241,11 @@ b, strong {
     display: flex;
     float: left;
     padding-top: 18px;
+
+    @media (max-width: $screen-sm-max) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__etic-item {
@@ -1653,11 +1705,26 @@ b, strong {
 .tiresList__option .hint-block {
   left: -22px;
   top: 0;
+
+  @media (max-width: $screen-md-max) {
+    left: 50%;
+  }
 }
 
+.tiresList__option .hint-block--installment {
+  @media (max-width: 1200px) {
+    left: auto;
+    right: 0;
+    transform: translate3d(0,0,0);
+  }
+}
 
-
-
+.tiresList__option .hint-block--free {
+  @media (max-width: $screen-md-max) {
+    left: 0;
+    transform: translate3d(0,0,0);
+  }
+}
 
 
 

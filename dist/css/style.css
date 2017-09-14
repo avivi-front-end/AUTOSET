@@ -2155,12 +2155,48 @@ b, strong {
   top: auto;
 }
 
+@media (max-width: 767px) {
+  .hint-block--price {
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .hint-block--price {
+    min-width: 200px;
+  }
+}
+
 .hint-block--price .hint-small-text {
   line-height: 17px;
 }
 
+@media (max-width: 1250px) {
+  .hint-block--price2 {
+    transform: translate3d(0, 0, 0);
+    left: auto;
+    right: 0;
+  }
+}
+
 .hint-block--installment {
   min-width: 250px;
+}
+
+@media (max-width: 1200px) {
+  .hint-block--installment {
+    transform: translate3d(0, 0, 0);
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hint-block--free {
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
 }
 
 .hint-block--weather {
@@ -2174,8 +2210,15 @@ b, strong {
 .hint-block--perf {
   left: 0;
   top: 43px;
-  min-width: 225px;
+  min-width: 224px;
   transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 543px) {
+  .hint-block--perf {
+    left: 47%;
+    transform: translate3d(-50%, 0, 1px);
+  }
 }
 
 .hint-block--perf p {
@@ -2188,6 +2231,21 @@ b, strong {
   top: 10px;
   text-align: center;
   min-width: 326px;
+}
+
+@media (max-width: 767px) {
+  .hint-block--class {
+    transform: translate3d(0, 0, 0);
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .hint-block--class {
+    min-width: 297px;
+    padding: 27px 10px;
+  }
 }
 
 .hint-block--class__block {
@@ -2470,6 +2528,15 @@ b, strong {
   display: flex;
   float: left;
   padding-top: 18px;
+}
+
+@media (max-width: 767px) {
+  .hint-block__etic-info {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 .hint-block__etic-item {
@@ -2930,6 +2997,27 @@ b, strong {
 .tiresList__option .hint-block {
   left: -22px;
   top: 0;
+}
+
+@media (max-width: 959px) {
+  .tiresList__option .hint-block {
+    left: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tiresList__option .hint-block--installment {
+    left: auto;
+    right: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 959px) {
+  .tiresList__option .hint-block--free {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .hint-small-text {
@@ -12844,6 +12932,27 @@ a.ui-button:active,
   left: -125px;
 }
 
+@media (max-width: 959px) {
+  .tiresList__question .hint-block {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 360px) {
+  .tiresList__question .hint-block {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 959px) {
+  .tiresList__question .hint-block--price2 {
+    left: auto;
+    right: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .tiresList__newPriceLabel {
   position: absolute;
   font-size: 12px;
@@ -13057,6 +13166,40 @@ a.ui-button:active,
   position: absolute;
   left: -61px;
   top: 0px;
+}
+
+@media (max-width: 767px) {
+  .tiresList__infoItem--border .hint-block--class__block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .tiresList__infoItem--border .hint-block--class__block {
+    padding: 9px 3px 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hint-block--class__item:before {
+    width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tiresList__infoItem .hint-block--class__block2 {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .tiresList__infoItem--border .hint-block--class {
+    min-width: auto;
+    padding: 20px 5px;
+  }
 }
 
 .service-works {
