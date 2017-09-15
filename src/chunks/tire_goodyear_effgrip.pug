@@ -8,6 +8,7 @@
 
 .prodCard
     .container.wrap.wrapMdOFF
+        a(href="#").prodCard__backBtn.prodCard__backBtn--top Вернуться к результатам подбора
         .prodCard__wrap
             .prodCard__left
                 .prodCard__name GOODYEAR
@@ -89,18 +90,6 @@
                         .prodCard__smallSliderItem
                             img(src="./img/img-prod-bigSliderImg-2.jpg", alt="#", data-object-fit="contain")
                 .prodCard__types.js-hint.hint.js-hint-block-width
-                    .prodCard__typeItem
-                        .prodCard__typeImg
-                            img(src="./img/img-prod-type-1.png", alt="#")
-                        span.prodCard__typeCode C
-                    .prodCard__typeItem
-                        .prodCard__typeImg
-                            img(src="./img/img-prod-type-2.png", alt="#")
-                        span.prodCard__typeCode A
-                    .prodCard__typeItem
-                        .prodCard__typeImg
-                            img(src="./img/img-prod-type-3.png", alt="#")
-                        span.prodCard__typeCode 69dB
                     .hint-block.hint-block--types.js-hint-width
                         .hint-block__etic
                             span.hint-block__etic-title Евроэтикетка
@@ -145,12 +134,6 @@
                                                 span g
                                             .hint-block__lvl-class
                                                 span g
-
-
-
-
-
-
                                 .hint-block__etic-item.hint-block__etic-item--ef2
                                     .hint-block__epic-big-border
                                         .hint-block__svg.hint-block__svg--rain
@@ -234,8 +217,19 @@
                                 span.hint-block__etic-info-text.
                                     Величина наружного шума шин оценивается в децибелах, а также маркируется графическим указателем. Одна чёрная волна – наиболее тихие покрышки, две – умеренно тихие, а три – предельно шумная резина. Разницами между соседними волнами составляет 3 дБ, что приравнивается к двукратному приросту в уровне шума. Установка тихих покрышек уменьшает звуковую нагрузку на городскую среду.
 
-
-
+                    .prodCard__typeItem
+                        .prodCard__typeImg
+                            img(src="./img/img-prod-type-1.png", alt="#")
+                        span.prodCard__typeCode C
+                    .prodCard__typeItem
+                        .prodCard__typeImg
+                            img(src="./img/img-prod-type-2.png", alt="#")
+                        span.prodCard__typeCode A
+                    .prodCard__typeItem
+                        .prodCard__typeImg
+                            img(src="./img/img-prod-type-3.png", alt="#")
+                        span.prodCard__typeCode 69dB
+                    
                 .prodCard__compare
                     input(type="checkbox" id="compare")
                     label(for="compare").prodCard__compareCheck Сравнить

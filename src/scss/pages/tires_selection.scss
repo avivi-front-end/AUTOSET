@@ -269,7 +269,7 @@
         padding: 14px 18px;
         margin-bottom: 20px;
 
-        @media (max-width: $screen-sm-max)  {
+        @media (max-width: $screen-md-max)  {
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -277,7 +277,7 @@
     &__results {
         font-size: 22px;
         letter-spacing: +0.2px;
-        @media (max-width: $screen-sm-max)  {
+        @media (max-width: $screen-md-max)  {
             margin-bottom: 15px;
         }
         & span {
@@ -287,10 +287,11 @@
     &__btns {
         display: flex;
         justify-content: flex-start;
-
+        
         @media (max-width: $screen-xs-max)  {
             flex-wrap: wrap;
             justify-content: center;
+            width: 280px
         }
     }
     &__btn {
@@ -306,7 +307,7 @@
         align-items: center;
         border-radius: 4px;
         cursor: pointer;
-
+        
         @media (max-width: $screen-xs-max) {
             &:first-child {
                 margin-bottom: 10px;

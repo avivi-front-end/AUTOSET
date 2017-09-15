@@ -11289,6 +11289,12 @@ a.ui-button:active,
   line-height: 1.1;
 }
 
+@media (max-width: 767px) {
+  .prodCard__classImg {
+    right: 20px;
+  }
+}
+
 .prodCard__prodClass {
   font-size: 36px;
   display: block;
@@ -11305,6 +11311,13 @@ a.ui-button:active,
   text-align: center;
   font-size: 14px;
   color: #000;
+}
+
+@media (max-width: 767px) {
+  .prodCard__videoBtn {
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 .prodCard__videoBtn img {
@@ -11394,6 +11407,14 @@ a.ui-button:active,
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  .prodCard__typeCode {
+    width: 34px;
+    height: 18px;
+    font-size: 12px;
+  }
+}
+
 .prodCard__typeCode:before {
   content: '';
   position: absolute;
@@ -11405,9 +11426,23 @@ a.ui-button:active,
   height: 0;
 }
 
+@media (max-width: 767px) {
+  .prodCard__typeCode:before {
+    border: 9px solid transparent;
+    border-right: 9px solid #000;
+    left: -18px;
+  }
+}
+
 .prodCard__compare {
   margin-bottom: 40px;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .prodCard__compare {
+    display: none;
+  }
 }
 
 .prodCard__compare input {
@@ -11469,6 +11504,7 @@ a.ui-button:active,
 @media (max-width: 767px) {
   .prodCard__backBtn {
     margin-bottom: 20px;
+    display: none;
   }
 }
 
@@ -11483,6 +11519,16 @@ a.ui-button:active,
   margin: auto;
   width: 0;
   height: 0;
+}
+
+.prodCard__backBtn--top {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .prodCard__backBtn--top {
+    display: inline-block;
+  }
 }
 
 .prodCard__right {
@@ -11548,6 +11594,7 @@ a.ui-button:active,
 
 .prodCard__optionImg span svg {
   max-width: 70%;
+  max-height: 57px;
   fill: #78c61d;
 }
 
@@ -11738,6 +11785,7 @@ a.ui-button:active,
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-radius: 5px;
 }
 
 @media (max-width: 543px) {
@@ -12412,7 +12460,7 @@ a.ui-button:active,
   margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 959px) {
   .tiresList__filter {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -12426,7 +12474,7 @@ a.ui-button:active,
   letter-spacing: +0.2px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 959px) {
   .tiresList__results {
     margin-bottom: 15px;
   }
@@ -12449,6 +12497,7 @@ a.ui-button:active,
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
+    width: 280px;
   }
 }
 

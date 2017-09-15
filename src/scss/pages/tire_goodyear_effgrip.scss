@@ -84,6 +84,10 @@
         top: 0;
         display: block;
         line-height: 1.1;
+
+        @media(max-width: $screen-sm-max) {
+            right: 20px;
+        }
     }
     &__prodClass {
         font-size: 36px;
@@ -101,6 +105,10 @@
         font-size: 14px;
         color: #000;
 
+        @media(max-width: $screen-sm-max) {
+            bottom: 20px;
+            right: 20px;
+        }
         & img {
             display: block;
             margin: 0 auto 3px;
@@ -166,6 +174,11 @@
         font-size: 16px;
         font-weight: bold;
 
+        @media (max-width: $screen-sm-max) {
+            width: 34px;
+            height: 18px;
+            font-size: 12px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -175,12 +188,21 @@
             top: 0;
             width: 0;
             height: 0;
+
+            @media (max-width: $screen-sm-max) {
+                border: 9px solid transparent;
+                border-right: 9px solid #000;
+                left: -18px;
+            }
         }
     }
     &__compare {
         margin-bottom: 40px;
         position: relative;
 
+        @media (max-width: $screen-sm-max) {
+            display: none;
+        }
         & input{
             visibility: hidden;
             position: absolute;
@@ -232,6 +254,7 @@
 
         @media(max-width: $screen-sm-max)  {
             margin-bottom: 20px;
+            display: none;
         }
         &:before {
             content: '';
@@ -244,6 +267,12 @@
             margin: auto;
             width: 0;
             height: 0;
+        }
+        &--top {
+            display: none;
+            @media(max-width: $screen-sm-max) {
+                display: inline-block;
+            }
         }
     }
     &__right {
@@ -287,6 +316,7 @@
             text-align: center;
             & svg {
                 max-width: 70%;
+                max-height: 57px;
                 fill: #78c61d;
             }
         }
@@ -437,6 +467,7 @@
         margin-bottom: 18px;
         display: flex;
         justify-content: space-between;
+        border-radius: 5px;
 
         @media(max-width: $screen-xs-max) {
             flex-wrap: wrap;
