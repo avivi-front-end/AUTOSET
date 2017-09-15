@@ -290,27 +290,39 @@
                         span.prodCard__newPriceNumber 184.36
                         |р.
                 form(action="")
-                    .prodCard__capacity
-                        .prodCard__capacityInput
-                            span Количество:
-                            select(name="form_select_product" id="form-select-product").prodCard__capacitySelect
-                                    option(value="1" selected="selected") 4
-                                    option(value="2") 1
-                                    option(value="3") 2
-                                    option(value="5") 8
-                        .prodCard__capacityStock
-                            span В наличии:
-                            |более 10 шт.
-                    .prodCard__orderBlock
-                        .prodCard__orderPrice
-                            .prodCard__orderPriceText
-                                |цена за 
-                                span 4 шт.
-                                |со скидкой:
-                            .prodCard__orderPriceNumber
-                                span 737.44
-                                |р.
-                        a(href="#").prodCard__orderBtn КУПИТЬ
+                    .prodCard__orderInfoWrap
+                        .prodCard__capacity
+                            .prodCard__capacityInput
+                                span Количество:
+                                select(name="form_select_product" id="form-select-product").prodCard__capacitySelect
+                                        option(value="1" selected="selected") 4
+                                        option(value="2") 1
+                                        option(value="3") 2
+                                        option(value="5") 8
+                            .prodCard__capacityStock
+                                span В наличии:
+                                |более 10 шт.
+                        .prodCard__orderBlock
+                            .prodCard__capacityStock.prodCard__capacityStock--mob
+                                span В наличии:
+                                |более 10 шт.
+                            .prodCard__orderPrice
+                                .prodCard__orderPriceText
+                                    |цена за 
+                                    span 4 шт.
+                                    |со скидкой:
+                                .prodCard__orderPriceNumber
+                                    span 737.44
+                                    |р.
+                            a(href="#").prodCard__orderBtn КУПИТЬ
+                        .prodCard__orderPrice.prodCard__orderPrice--mob
+                                .prodCard__orderPriceText
+                                    |цена за 
+                                    span 4 шт.
+                                    |со скидкой:
+                                .prodCard__orderPriceNumber
+                                    span 737.44
+                                    |р.
                 ul.prodCard__infoList
                     li.prodCard__infoItem
                         .prodCard__infoName Сезонность:

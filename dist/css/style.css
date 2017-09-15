@@ -11692,6 +11692,17 @@ a.ui-button:active,
   }
 }
 
+@media (max-width: 767px) {
+  .prodCard__orderInfoWrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .prodCard__capacity {
   display: -ms-flexbox;
   display: flex;
@@ -11723,10 +11734,12 @@ a.ui-button:active,
   }
 }
 
-@media (max-width: 543px) {
+@media (max-width: 767px) {
   .prodCard__capacityInput {
-    width: 100%;
-    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 88px;
+    padding-top: 25px;
   }
 }
 
@@ -11753,9 +11766,23 @@ a.ui-button:active,
   width: 100% !important;
 }
 
+@media (max-width: 767px) {
+  .prodCard__capacityInput span {
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+  }
+}
+
 .prodCard__capacitySelect {
   margin-left: 10px;
   width: 85px;
+}
+
+@media (max-width: 767px) {
+  .prodCard__capacitySelect {
+    margin-left: 0;
+  }
 }
 
 .prodCard__capacityStock {
@@ -11770,6 +11797,25 @@ a.ui-button:active,
 @media (max-width: 959px) {
   .prodCard__capacityStock {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .prodCard__capacityStock {
+    display: none;
+  }
+}
+
+.prodCard__capacityStock--mob {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .prodCard__capacityStock--mob {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
   }
 }
 
@@ -11788,10 +11834,15 @@ a.ui-button:active,
   border-radius: 5px;
 }
 
-@media (max-width: 543px) {
+@media (max-width: 767px) {
   .prodCard__orderBlock {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    background: transparent;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    width: 192px;
   }
 }
 
@@ -11814,6 +11865,32 @@ a.ui-button:active,
   .prodCard__orderPrice {
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .prodCard__orderPrice {
+    display: none;
+  }
+}
+
+.prodCard__orderPrice--mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .prodCard__orderPrice--mob {
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -11857,9 +11934,11 @@ a.ui-button:active,
   border-radius: 6px;
 }
 
-@media (max-width: 543px) {
+@media (max-width: 767px) {
   .prodCard__orderBtn {
-    margin: 0 auto;
+    width: 180px;
+    font-size: 32px;
+    height: 50px;
   }
 }
 
@@ -12569,7 +12648,7 @@ a.ui-button:active,
   justify-content: space-between;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 767px) {
   .tiresList__itemWrap {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -12582,7 +12661,7 @@ a.ui-button:active,
   width: 560px;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 767px) {
   .tiresList__itemLeft {
     width: 100%;
     margin-bottom: 20px;
@@ -12614,7 +12693,7 @@ a.ui-button:active,
   margin-bottom: 15px;
 }
 
-@media (max-width: 543px) {
+@media (max-width: 959px) {
   .tiresList__modelInfo {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -12628,7 +12707,7 @@ a.ui-button:active,
   color: #000;
 }
 
-@media (max-width: 543px) {
+@media (max-width: 959px) {
   .tiresList__infoItem {
     margin-bottom: 10px;
   }
@@ -12839,6 +12918,22 @@ a.ui-button:active,
   width: 100%;
 }
 
+@media (max-width: 959px) {
+  .tiresList__smallInfo {
+    display: none;
+  }
+}
+
+.tiresList__smallInfo--mob {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .tiresList__smallInfo--mob {
+    display: block;
+  }
+}
+
 .tiresList__smallInfoItem {
   display: -ms-flexbox;
   display: flex;
@@ -12885,6 +12980,12 @@ a.ui-button:active,
   justify-content: space-between;
   margin-bottom: 35px;
   padding-top: 10px;
+}
+
+@media (max-width: 959px) {
+  .tiresList__options {
+    margin-bottom: 15px;
+  }
 }
 
 .tiresList__option {

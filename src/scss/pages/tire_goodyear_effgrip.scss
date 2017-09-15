@@ -402,6 +402,13 @@
             line-height: 1.2;
         }
     }
+    &__orderInfoWrap {
+        @media(max-width: $screen-sm-max) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
     &__capacity {
         display: flex;
         justify-content: space-between;
@@ -420,9 +427,10 @@
         @media(max-width: $screen-md-max) {
             font-size: 12px;
         }
-        @media(max-width: $screen-xs-max)  {
-            width: 100%;
-            margin-bottom: 10px;
+        @media(max-width: $screen-sm-max) {
+            flex-wrap: wrap;
+            width: 88px;
+            padding-top: 25px;
         }
         & .jq-selectbox__select {
             width: 85px;
@@ -443,10 +451,21 @@
             text-align: center;
             width: 100% !important;
         }
+        & span {
+            @media(max-width: $screen-sm-max) {
+                display: block;
+                margin-bottom: 4px;
+                width: 100%;
+            }
+        }
     }
     &__capacitySelect {
         margin-left: 10px;
         width: 85px;
+
+        @media(max-width: $screen-sm-max) {
+            margin-left: 0;
+        }
     }
     &__capacityStock {
         display: flex;
@@ -456,6 +475,19 @@
 
         @media(max-width: $screen-md-max) {
             font-size: 12px;
+        }
+        @media(max-width: $screen-sm-max) {
+            display: none;
+        }
+        &--mob {
+            display: none;
+            width: 100%;
+
+            @media(max-width: $screen-sm-max) {
+                display: block;
+                text-align: right;
+                margin-bottom: 5px;
+            }
         }
         & span {
             color: #999999;
@@ -469,8 +501,12 @@
         justify-content: space-between;
         border-radius: 5px;
 
-        @media(max-width: $screen-xs-max) {
+        @media(max-width: $screen-sm-max) {
             flex-wrap: wrap;
+            background: transparent;
+            justify-content: flex-end;
+            margin-bottom: 5px;
+            width: 192px;
         }
     }
     &__orderPrice {
@@ -485,6 +521,20 @@
         @media(max-width: $screen-xs-max) {
             width: 100%;
             margin-bottom: 10px;
+        }
+        @media(max-width: $screen-sm-max) {
+            display: none;
+        }
+        &--mob {
+            display: none;
+            @media(max-width: $screen-sm-max) {
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
     &__orderPriceText {
@@ -521,8 +571,10 @@
         cursor: pointer;
         border-radius: 6px;
 
-        @media(max-width: $screen-xs-max) {
-            margin: 0 auto;
+        @media(max-width: $screen-sm-max) {
+            width: 180px;
+            font-size: 32px;
+            height: 50px;
         }
         &:hover {
             background-color:#ff2c2c;
