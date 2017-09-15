@@ -385,7 +385,7 @@
         position: absolute;
         justify-content: center;
         align-items: center;
-        padding-left: 1px;
+        // padding-left: 1px;
         padding-bottom: 1px;
 
     }
@@ -642,11 +642,65 @@
 
         @media(max-width: $screen-sm-max)  {
             flex-wrap: wrap;
+            display: none;
         }
+        &--mob {
+            display: none;
+
+            @media(max-width:$screen-sm-max) {
+                display: block;
+            }
+        }
+        & .prodInfo__tabItem {
+            border-bottom: 1px solid #e6e6e6;
+            padding: 5px 0;
+
+            & a {
+                display: block;
+                padding: 7px 5px 7px 20px;
+                position: relative;
+                color: #000;
+                text-align: left;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    border: 5px solid transparent;
+                    height: 0;
+                    width: 0;
+                    border-top: 5px solid #8C8C8C;
+                    right: 15px;
+                    top: 4px;
+                    bottom: 0;
+                    margin: auto;
+                }
+
+                &.active {
+                    background: #e6e6e6;
+                    font-weight: 600;
+
+                    &:before {
+                        border-top: 5px solid transparent;
+                        border-bottom: 5px solid #8C8C8C;
+                        top: -4px;
+                    }
+                }
+            }
+        }
+    }
+    &__textSlide {
+        display: none;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: left;
     }
     &__tabsBlocks {
         padding-bottom: 25px;
         border-bottom: 1px solid #e6e6e6;
+
+        @media(max-width: $screen-sm-max)  {
+            display: none;
+        }
     }
     &__tabItem {
         cursor: pointer;
@@ -655,7 +709,7 @@
         width: 100%;
         transition: background 0.3s, font-weight 0.3s;
         text-align: center;
-
+        
         &.active {
             background: #e6e6e6;
             font-weight: 600;
@@ -663,6 +717,10 @@
         &:hover {
             background: #e6e6e6;
             font-weight: 600;
+            @media(max-width:$screen-sm-max) {
+                background: transparent;
+                font-weight: normal;
+            } 
         }
     }
     &__tabBlock {
@@ -702,9 +760,7 @@
             display: block;
             background: #000;
             left: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
+            top: 8px;
         }
     }
     &__tabSlogan {

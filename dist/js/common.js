@@ -377,7 +377,18 @@ $(function() {
         }
     );
 
-
+    $('.js-prodBtn').on('click', function(e){
+        e.preventDefault();
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).siblings('.js-prodSlide').slideUp();
+        } else {
+            $('.js-prodBtn').removeClass('active');
+            $('.js-prodSlide').slideUp();
+            $(this).addClass('active');
+            $(this).siblings('.js-prodSlide').slideDown();
+        }
+    })
 
 });
 
